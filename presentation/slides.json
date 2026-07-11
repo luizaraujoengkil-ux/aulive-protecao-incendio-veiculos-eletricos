@@ -8,7 +8,7 @@
     "broadcast": "Ao vivo no YouTube",
     "source": "Baseado no e-book — 3ª edição",
     "targetMinutes": 40,
-    "slideCount": 14
+    "slideCount": 12
   },
   "slides": [
     {
@@ -17,34 +17,34 @@
       "title": "Capa",
       "minutes": 1,
       "notes": {
-        "goal": "Abrir a AULIVE com firmeza e enquadrar a mensagem central: o problema não é o veículo elétrico, é o improviso na edificação.",
+        "goal": "Abrir a AULIVE e fixar a mensagem central: preparar a EDIFICAÇÃO para o veículo elétrico — não é um problema apenas elétrico.",
         "time": "≈ 1 minuto",
         "talk": [
-          "Dar boas-vindas, apresentar os dois professores e o número da AULIVE.",
-          "Reforçar que a aula é baseada no e-book (3ª edição) e tem finalidade educacional.",
-          "Ancorar a frase-chave: não basta instalar o carregador, é preciso preparar a edificação."
+          "Boas-vindas rápidas; os professores se apresentam ao vivo (a capa traz só os nomes).",
+          "Base no e-book (3ª edição); finalidade educacional.",
+          "Ancorar: não basta instalar o carregador, é preciso preparar a edificação."
         ],
-        "transition": "Se a garagem vai receber o carro elétrico, precisamos primeiro combinar o que essa aula pretende entregar — vamos ao objetivo.",
-        "caution": "Não abrir com imagem de incêndio catastrófico nem com tom alarmista. A capa mostra prevenção e monitoramento, não tragédia.",
-        "visual": "Corte esquemático de garagem: veículo conectado ao carregador, estrutura de concreto, sensor térmico, sprinkler, rota de fuga e as camadas de proteção ainda em repouso."
+        "transition": "Para começar, vamos combinar o objetivo desta aula e os cinco pilares que sustentam a preparação da edificação.",
+        "caution": "Sem imagem de incêndio catastrófico e sem tom alarmista. A capa mostra prevenção e monitoramento. Este slide também serve de peça de divulgação.",
+        "visual": "Corte esquemático de garagem em destaque: veículo conectado, sensor, sprinkler, camadas de proteção e rota de fuga — visual premium para uso como propaganda."
       }
     },
     {
       "id": "slide-02",
       "n": 2,
       "title": "Objetivo da AULIVE",
-      "minutes": 2,
+      "minutes": 3,
       "notes": {
-        "goal": "Deixar claro o escopo: preparar edificações para receber veículos elétricos com segurança, organizado em cinco pilares.",
-        "time": "≈ 2 minutos",
+        "goal": "Enquadrar a aula: preparar a edificação (visão multidisciplinar) para receber VEs. A parte elétrica é uma etapa, não o centro.",
+        "time": "≈ 3 minutos",
         "talk": [
-          "Enunciar o objetivo em uma frase e depois abrir os cinco pilares um a um.",
-          "Conectar cada pilar a um público da audiência (síndico, projetista, gestor).",
-          "Fechar com a ideia de que a eletromobilidade é realidade e a edificação precisa acompanhar."
+          "Enunciar o objetivo e abrir os cinco pilares, na ordem do raciocínio.",
+          "Destacar o 4º pilar: as disciplinas da edificação (estrutura, impermeabilização, ventilação/exaustão, drenagem, sinalização).",
+          "Fechar: a parte elétrica só é preparada depois de confirmar a capacidade e a sinergia entre os sistemas."
         ],
-        "transition": "Antes das medidas, vale entender o tamanho do fenômeno: a eletromobilidade já chegou às garagens.",
-        "caution": "Apresentar os pilares como uma agenda de trabalho, não como uma lista de obrigações legais. São eixos de análise técnica.",
-        "visual": "Edificação central cercada por cinco anéis/barreiras de segurança; cada pilar acende conforme avançamos os fragmentos."
+        "transition": "Antes das medidas, vale dimensionar o fenômeno: a eletromobilidade já chegou às edificações.",
+        "caution": "Apresentar os pilares como agenda técnica de análise, não como obrigações legais. Evitar reduzir tudo à instalação elétrica.",
+        "visual": "Edificação central cercada por cinco barreiras; cada pilar acende conforme avançamos os fragmentos."
       }
     },
     {
@@ -53,15 +53,15 @@
       "title": "O avanço dos veículos elétricos",
       "minutes": 3,
       "notes": {
-        "goal": "Dimensionar o crescimento da eletromobilidade com dados atuais e transferir a discussão do veículo para a edificação.",
+        "goal": "Dimensionar o crescimento com dados atuais e transferir a discussão do veículo para a edificação que vai recebê-lo.",
         "time": "≈ 3 minutos",
         "talk": [
-          "Citar os números do 1º semestre de 2026 (215.023 unidades; 15,8% do mercado) e junho de 2026 (18,3%).",
-          "Ler a evolução do gráfico: jun/2025 7,7% → dez/2025 12,7% → jun/2026 18,3%.",
-          "Concluir que a garagem passa a receber novas cargas elétricas e demanda planejamento."
+          "Citar 1º semestre de 2026 (215.023 unidades; 15,8%) e junho/2026 (18,3%).",
+          "Ler a evolução: jun/2025 7,7% → dez/2025 12,7% → jun/2026 18,3%.",
+          "Concluir que as edificações passam a receber novas cargas e demandam planejamento."
         ],
-        "transition": "Com mais carros chegando, a pergunta natural é: onde exatamente mora o risco?",
-        "caution": "Atribuir os dados à fonte (ABVE Data, 6 de julho de 2026). Não afirmar que o crescimento das vendas significa aumento proporcional de incêndios.",
+        "transition": "Com mais carros chegando, a pergunta é: onde exatamente mora o risco — e em que ordem avaliá-lo?",
+        "caution": "Atribuir os dados à ABVE Data (6 de julho de 2026). Não afirmar que mais vendas significam mais incêndios.",
         "visual": "Gráfico de barras animado com a participação subindo em três marcos; a barra final destaca-se em laranja."
       }
     },
@@ -69,198 +69,162 @@
       "id": "slide-04",
       "n": 4,
       "title": "Onde está o risco real?",
-      "minutes": 3,
+      "minutes": 4,
       "notes": {
-        "goal": "Mostrar que o risco é sistêmico: veículo + carregador + instalação + garagem + estrutura, e não um único ponto.",
-        "time": "≈ 3 minutos",
+        "goal": "Mostrar a ordem de avaliação do risco: quantidade e localização → instalação → edificação e seus sistemas, buscando sinergia para mitigar.",
+        "time": "≈ 4 minutos",
         "talk": [
-          "Percorrer as camadas do sistema conforme os fragmentos destacam cada uma.",
-          "Explicar de forma sóbria o conceito de fuga térmica: calor intenso, gases, fumaça e possibilidade de reignição.",
-          "Fechar com a ideia de análise de risco como sistema, não como peça isolada."
+          "Primeiro: quantidade e localização dos pontos de recarga (concentração, simultaneidade, subsolo).",
+          "Depois: a instalação. Só então a edificação inteira e seus sistemas.",
+          "Fechar: o risco é sistêmico; a mitigação vem da sinergia entre os sistemas, não de um item isolado."
         ],
-        "transition": "Se o risco é sistêmico, o primeiro sistema de defesa é o atendimento às normas — vamos a elas.",
-        "caution": "Não afirmar que veículos elétricos pegam fogo com mais frequência que os a combustão. Falar em características diferentes de incêndio, não em frequência maior.",
-        "visual": "Diagrama em camadas concêntricas; cada fragmento acende e rotula uma camada do sistema (bateria, carregador, instalação, garagem, estrutura, resposta)."
+        "transition": "Se o risco é sistêmico, o ponto de partida é atender às normas e ter desempenho adequado nos sistemas da edificação.",
+        "caution": "Não reduzir o risco à garagem nem à parte elétrica. Não afirmar que VEs pegam fogo com mais frequência que combustão.",
+        "visual": "Camadas concêntricas: quantidade e localização (centro) → instalação → edificação e sistemas → sinergia; cada camada é destacada nos fragmentos."
       }
     },
     {
       "id": "slide-05",
       "n": 5,
-      "title": "Normas e legislação",
-      "minutes": 3,
+      "title": "Normas e desempenho da edificação",
+      "minutes": 4,
       "notes": {
-        "goal": "Posicionar as normas como ponto de partida e alertar para a variação por estado, município, edificação e data do projeto.",
-        "time": "≈ 3 minutos",
+        "goal": "Unir conformidade normativa e desempenho: só se adequa/modifica a edificação que já atende seus sistemas e subsistemas com desempenho adequado.",
+        "time": "≈ 4 minutos",
         "talk": [
-          "Listar as referências (NBR 17019, NBR 5410, IEC 60364-7-722, normas de equipamentos de recarga).",
-          "Explicar o papel das instruções técnicas do Corpo de Bombeiros e das exigências da concessionária.",
-          "Enfatizar a responsabilidade técnica de projeto e execução."
+          "Referências (NBR 17019, NBR 5410, IEC 60364-7-722, ITs do Corpo de Bombeiros, concessionária).",
+          "Apelo central: antes de modificar, verificar se os sistemas da edificação têm desempenho adequado.",
+          "Reforçar responsabilidade técnica de projeto e execução."
         ],
-        "transition": "Cumprida a base normativa, o próximo passo concreto é a instalação do carregador — que não é uma tomada comum.",
-        "caution": "Não apresentar uma instrução estadual como exigência nacional. Repetir que os requisitos variam conforme estado, município, edificação e data.",
-        "visual": "Linha de conformidade horizontal: norma → projeto → responsabilidade técnica → instalação → inspeção, com um selo de aviso sobre variação regional."
+        "transition": "Comprovado o desempenho, o passo seguinte é o diagnóstico: a edificação suporta receber os veículos elétricos?",
+        "caution": "Não tratar instrução estadual como exigência nacional. Requisitos variam por estado, município, edificação e data.",
+        "visual": "Linha de conformidade (norma → projeto → RT → instalação → inspeção) com um medidor de desempenho: só com desempenho adequado se libera a adequação."
       }
     },
     {
       "id": "slide-06",
       "n": 6,
-      "title": "Instalação de carregadores",
+      "title": "Diagnóstico da capacidade da edificação",
       "minutes": 4,
       "notes": {
-        "goal": "Contrastar o improviso com a instalação projetada e mostrar o que caracteriza uma instalação adequada.",
+        "goal": "Deslocar de 'diagnóstico elétrico' para 'capacidade da edificação de receber VEs': primeiro a demanda e as disciplinas; só depois a parte elétrica.",
         "time": "≈ 4 minutos",
         "talk": [
-          "Percorrer os requisitos: equipamento certificado, circuito dedicado, proteções, localização, sinalização e documentação.",
-          "Descrever o lado do improviso (extensão, cabo aquecido, ausência de proteção) em vermelho.",
-          "Descrever o lado projetado (circuito dedicado, quadro, proteção, identificação, desligamento)."
+          "Percorrer o fluxo: levantamento → capacidade da edificação → integração multidisciplinar → projeto elétrico → projeto final.",
+          "A demanda elétrica é UM item; antes vêm estrutura, impermeabilização, ventilação/exaustão, drenagem, sinalização, incêndio e rotas de fuga.",
+          "Só depois de confirmar a capacidade e a sinergia é que se prepara a parte elétrica."
         ],
-        "transition": "Mas antes de instalar qualquer carregador, é preciso saber se a edificação suporta — vem o diagnóstico elétrico.",
-        "caution": "O comparativo é didático. Não sugerir que basta trocar peças; a instalação adequada depende de projeto e avaliação técnica.",
-        "visual": "Painel dividido: à esquerda o improviso (vermelho de alerta); à direita a instalação projetada (azul elétrico e verde de conformidade)."
+        "transition": "Diagnosticada a capacidade, veja onde o risco se espalha: não é só a garagem, é a edificação inteira.",
+        "caution": "Não vender a análise como exclusivamente elétrica. O dimensionamento depende de avaliação técnica multidisciplinar caso a caso.",
+        "visual": "Fluxograma com a parte elétrica ao final; ramificações mostram as disciplinas cruzadas antes do projeto elétrico."
       }
     },
     {
       "id": "slide-07",
       "n": 7,
-      "title": "Análise elétrica da edificação",
-      "minutes": 3,
+      "title": "Não é só a garagem — é a edificação",
+      "minutes": 4,
       "notes": {
-        "goal": "Deslocar a pergunta de 'onde instalar' para 'a edificação suporta essa nova demanda', apresentando o fluxo de diagnóstico.",
-        "time": "≈ 3 minutos",
+        "goal": "Ampliar o olhar da garagem para toda a edificação: subsolo, pavimentos, áreas comuns, apartamentos — inclusive baterias de veículos leves.",
+        "time": "≈ 4 minutos",
         "talk": [
-          "Percorrer o fluxograma: levantamento → cálculo de demanda → análise de infraestrutura → integração multidisciplinar → projeto final.",
-          "Explicar simultaneidade, gerenciamento de carga e expansão futura.",
-          "Mostrar que a análise elétrica cruza com ventilação, drenagem, impermeabilização, incêndio, estrutura e rotas de fuga."
+          "Os VEs podem estar no subsolo, mas as barreiras e consequências passam por elevados, apartamentos e áreas comuns.",
+          "Baterias de veículos leves (bikes, patinetes) carregam dentro dos apartamentos e áreas comuns.",
+          "Destacar rota de fuga, ventilação, desligamento, sensor/sprinkler e acesso dos bombeiros em vários níveis."
         ],
-        "transition": "Diagnosticada a infraestrutura, olhamos para o espaço físico: a garagem vira uma área técnica de risco.",
-        "caution": "Não transformar recomendações gerais em obrigações. O dimensionamento depende de avaliação técnica caso a caso.",
-        "visual": "Fluxograma em cinco etapas; ao final, ramificações mostram as disciplinas que precisam ser integradas ao projeto."
+        "transition": "Com o risco espalhado pela edificação, a prevenção precisa ser planejada de forma multidisciplinar.",
+        "caution": "A solução é ilustrativa; depende do tipo de edificação e das instruções do Corpo de Bombeiros local. Não generalizar layout.",
+        "visual": "Corte de uma edificação com vários pavimentos: subsolo com recarga, áreas comuns, elevador, apartamento com bateria leve — pontos de risco destacados."
       }
     },
     {
       "id": "slide-08",
       "n": 8,
-      "title": "Medidas mitigatórias nas garagens",
+      "title": "Prevenção e combate: planejamento multidisciplinar",
       "minutes": 4,
       "notes": {
-        "goal": "Tratar a garagem como área técnica de risco e mapear as medidas mitigatórias sobre uma planta baixa.",
+        "goal": "Mostrar que planejar bem exige olhar as disciplinas juntas, não só a elétrica. Usar cenários para provocar a reflexão.",
         "time": "≈ 4 minutos",
         "talk": [
-          "Destacar na planta cada elemento: rota de fuga, vaga de recarga, quadro, desligamento, sprinkler, sensor e acesso dos bombeiros.",
-          "Reforçar afastamento de rotas de fuga, ventilação e controle de combustíveis.",
-          "Chamar atenção especial para garagens subterrâneas."
+          "Cenário 1: estrutura já com patologia + incêndio de bateria — haverá tempo de todos saírem?",
+          "Cenário 2: proteção elétrica conforme o Corpo de Bombeiros, mas laje com vazamento (impermeabilização deficiente) — água + parte elétrica combinam?",
+          "Percorrer a linha de resposta: detecção → alarme → desligamento → evacuação → resfriamento → isolamento → monitoramento."
         ],
-        "transition": "Com o espaço organizado, entramos na lógica de prevenção e combate a incêndio.",
-        "caution": "As soluções mostradas são ilustrativas; a solução real depende do tipo de edificação e das instruções do Corpo de Bombeiros local.",
-        "visual": "Planta baixa esquemática interativa; cada fragmento realça um item da garagem sobre o desenho."
+        "transition": "Nem todo risco vem do carro: as baterias menores também exigem cuidado.",
+        "caution": "Não dizer que um extintor portátil, isoladamente, controla uma bateria em fuga térmica. Falar em estratégia e resfriamento.",
+        "visual": "Dois cenários 'e se?' (patologia + incêndio; impermeabilização + água + elétrica) acima da linha temporal de resposta."
       }
     },
     {
       "id": "slide-09",
       "n": 9,
-      "title": "Prevenção e combate a incêndio",
-      "minutes": 4,
-      "notes": {
-        "goal": "Mostrar que o combate começa antes do incêndio, com detecção, plano de resposta e monitoramento posterior.",
-        "time": "≈ 4 minutos",
-        "talk": [
-          "Percorrer a linha temporal: detecção precoce → alarme → desligamento → evacuação → resfriamento → isolamento → monitoramento.",
-          "Explicar a importância do resfriamento e da possibilidade de reignição.",
-          "Falar de brigada treinada, rotas desobstruídas e comunicação com o Corpo de Bombeiros."
-        ],
-        "transition": "Nem todo risco vem do carro: as baterias menores também exigem cuidado.",
-        "caution": "Não afirmar que um extintor portátil, isoladamente, controla uma bateria veicular em fuga térmica. Falar em estratégia e resfriamento, não em solução única.",
-        "visual": "Linha do tempo com sete etapas encadeadas; cada etapa acende em sequência mostrando a resposta planejada."
-      }
-    },
-    {
-      "id": "slide-10",
-      "n": 10,
       "title": "Baterias de lítio: cuidados extras",
       "minutes": 3,
       "notes": {
-        "goal": "Ampliar o olhar para baterias menores (bikes, patinetes, ferramentas) e estabelecer regras internas de uso e guarda.",
+        "goal": "Tratar as baterias menores (bikes, patinetes, ferramentas) e estabelecer regras internas de uso e guarda.",
         "time": "≈ 3 minutos",
         "talk": [
-          "Listar os equipamentos com baterias de lítio presentes nas edificações.",
-          "Apresentar as regras: não carregar em rota de fuga, evitar ambientes sem supervisão, não usar baterias danificadas.",
-          "Mostrar os sinais de alerta: inchaço, impacto, aquecimento e odor anormal."
+          "Listar equipamentos com baterias de lítio presentes na edificação.",
+          "Regras: não carregar em rota de fuga, evitar ambientes sem supervisão, não usar baterias danificadas.",
+          "Sinais de alerta: inchaço, impacto, aquecimento e odor anormal."
         ],
-        "transition": "Mesmo quando o incêndio é controlado, resta uma pergunta: e a estrutura da edificação?",
+        "transition": "Mesmo controlado o incêndio, resta a pergunta estrutural: e a edificação, atende à norma que garante o desempenho ao fogo?",
         "caution": "Reforçar carregadores compatíveis e certificados. Não recomendar improviso com carregadores não originais.",
         "visual": "Painel com quatro tipos de bateria e um quadro com os quatro sinais de alerta destacados."
       }
     },
     {
-      "id": "slide-11",
-      "n": 11,
-      "title": "Proteção da estrutura",
+      "id": "slide-10",
+      "n": 10,
+      "title": "Estrutura e a ABNT NBR 15200",
       "minutes": 4,
       "notes": {
-        "goal": "Mostrar que apagar o incêndio não devolve a estrutura ao uso; o dano térmico pode ser interno e não visível.",
+        "goal": "Levantar a indagação: a edificação atende à ABNT NBR 15200? Isso impacta o TRRF e pode impedir a instalação sem projeto de adequação.",
         "time": "≈ 4 minutos",
         "talk": [
-          "Explicar resistência ao fogo de lajes, vigas e pilares, TRRF e cobrimento das armaduras.",
-          "Falar de proteção passiva, compartimentação e dos efeitos do calor no concreto (fissuras, destacamento).",
-          "Defender a inspeção estrutural após o sinistro antes de liberar o uso."
+          "Indagação central: seu edifício atende à ABNT NBR 15200 (dimensionamento de estruturas em situação de incêndio)?",
+          "Impacto imediato no TRRF, cobrimento das armaduras, proteção passiva e compartimentação.",
+          "Pode impedir a instalação em pontos específicos sem um projeto de adequação estrutural; inspeção após o sinistro."
         ],
-        "transition": "Se a estrutura pode ficar comprometida, a prevenção também precisa proteger o patrimônio e as responsabilidades.",
-        "caution": "Não afirmar que a aparência externa preservada garante segurança. O dano interno é possível mesmo sem sinais visíveis.",
-        "visual": "Corte de laje e viga de concreto com gradiente de calor; comparação entre aparência externa e dano interno possível."
+        "transition": "Se a estrutura pode limitar a instalação, a prevenção também precisa proteger o patrimônio e as responsabilidades.",
+        "caution": "Não afirmar que aparência externa preservada garante segurança. O dano interno é possível sem sinais visíveis.",
+        "visual": "Corte de laje/viga com gradiente de calor + selo de indagação 'NBR 15200?' ligando ao TRRF e à liberação da instalação."
+      }
+    },
+    {
+      "id": "slide-11",
+      "n": 11,
+      "title": "Seguro, responsabilidade e manutenção",
+      "minutes": 3,
+      "notes": {
+        "goal": "Conectar segurança contra incêndio à gestão de responsabilidade, documentação e — com destaque — à cobertura securitária para incêndio de VE.",
+        "time": "≈ 3 minutos",
+        "talk": [
+          "Documentação: projeto, ART/RRT, memorial, registros, manutenção documentada, rastreabilidade.",
+          "Alerta do seguro: se a apólice não cobre incêndio de veículo elétrico, o prejuízo pode ser enorme.",
+          "Comunicar a mudança de uso à seguradora e verificar a cobertura conforme contrato."
+        ],
+        "transition": "Documentação e cobertura em ordem não encerram o trabalho: a segurança vira gestão de manutenção — e ela precisa mudar.",
+        "caution": "Não prometer cobertura. As condições devem ser verificadas diretamente na apólice e com a seguradora.",
+        "visual": "Escudo central protegendo pessoas, edificação, veículos, documentação e patrimônio, com destaque para a apólice/seguro."
       }
     },
     {
       "id": "slide-12",
       "n": 12,
-      "title": "Seguro, responsabilidade e patrimônio",
-      "minutes": 2,
-      "notes": {
-        "goal": "Conectar segurança contra incêndio à gestão de responsabilidade, documentação e cobertura securitária.",
-        "time": "≈ 2 minutos",
-        "talk": [
-          "Percorrer a cadeia documental: projeto, ART/RRT, memorial, registros e manutenção documentada.",
-          "Explicar rastreabilidade e definição clara de responsabilidades.",
-          "Falar em comunicação ao seguro e preservação da cobertura conforme contrato."
-        ],
-        "transition": "Documentação em ordem não encerra o trabalho: a segurança continua na manutenção e na inspeção.",
-        "caution": "Não prometer cobertura de seguro. As condições devem ser verificadas diretamente na apólice e com a seguradora.",
-        "visual": "Escudo central protegendo cinco itens: pessoas, edificação, veículos, documentação e patrimônio."
-      }
-    },
-    {
-      "id": "slide-13",
-      "n": 13,
-      "title": "Manutenção, inspeção e gestão de risco",
+      "title": "Gestão proativa e conclusão",
       "minutes": 3,
       "notes": {
-        "goal": "Firmar que a segurança é contínua: inspeção periódica, termografia e um ciclo de gestão de risco que se repete.",
+        "goal": "Firmar que a segurança é uma gestão de manutenção completa que evolui para a proatividade — e fechar com a mensagem central.",
         "time": "≈ 3 minutos",
         "talk": [
-          "Percorrer o ciclo: inspecionar → registrar → avaliar → corrigir → testar → acompanhar.",
-          "Detalhar o que inspecionar: cabos, conexões, quadros, proteções, carregadores e sistemas de incêndio.",
-          "Reforçar o registro de não conformidades e a revisão após alterações da garagem."
+          "Não é só gestão continuada: é revisar o planejamento de manutenção e ajustar o manual de uso, operação e manutenção do edifício.",
+          "Implementar melhorias nas manutenções preventiva e preditiva, caminhando cada vez mais para a proativa.",
+          "Fechar com as conclusões e a mensagem final; agradecer e indicar o e-book."
         ],
-        "transition": "Fechando o ciclo, chegamos à conclusão: a eletromobilidade é inevitável e a prevenção também deve ser.",
-        "caution": "Carregador instalado sem inspeção vira ponto cego de risco. Não tratar a instalação como evento único e definitivo.",
-        "visual": "Ciclo animado de seis etapas em anel; a seta percorre o ciclo indicando que a gestão é contínua."
-      }
-    },
-    {
-      "id": "slide-14",
-      "n": 14,
-      "title": "Conclusão",
-      "minutes": 1,
-      "notes": {
-        "goal": "Consolidar as cinco conclusões e encerrar com a mensagem central de preparar, proteger e monitorar a edificação.",
-        "time": "≈ 1 minuto",
-        "talk": [
-          "Recapitular as cinco conclusões de forma rápida e afirmativa.",
-          "Entregar a mensagem final em destaque e agradecer.",
-          "Reforçar a frase: o veículo elétrico não é o problema, o improviso é."
-        ],
-        "transition": "Encerramento: agradecer a audiência, indicar o e-book e abrir para perguntas.",
-        "caution": "Manter o tom construtivo. Nada de sensacionalismo no fechamento; a mensagem é de preparo, não de medo.",
-        "visual": "Retorno à garagem do slide 1, agora com todas as camadas de proteção ativadas e acesas."
+        "transition": "Encerramento: agradecer a audiência, reforçar 'preparar, proteger e monitorar' e abrir para perguntas.",
+        "caution": "Manter o tom construtivo, sem sensacionalismo. O veículo elétrico não é o problema — o improviso é.",
+        "visual": "Ciclo de manutenção evoluindo para proativa + conclusões e mensagem final; retomada da edificação preparada, protegida e monitorada."
       }
     }
   ]

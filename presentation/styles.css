@@ -353,12 +353,31 @@ html, body {
 .chip .dot.cyan { background: var(--c-cyan); }
 .chip .dot.red { background: var(--c-red); }
 
-/* Chips de palestrantes com foto */
+/* Chips de palestrantes com foto (apenas nomes — a apresentação é feita ao vivo) */
 .speakers { display: flex; gap: 22px; }
-.speaker { display: flex; align-items: center; gap: 16px; padding: 10px 22px 10px 10px; border-radius: 999px; background: var(--panel); border: 1px solid var(--line); }
-.speaker img { width: 68px; height: 68px; border-radius: 50%; object-fit: cover; background: #1e293b; box-shadow: 0 0 0 2px rgba(249,115,22,0.7); }
-.speaker .nm { font-size: 24px; font-weight: 700; color: var(--c-white); line-height: 1.1; }
+.speaker { display: flex; align-items: center; gap: 16px; padding: 10px 26px 10px 10px; border-radius: 999px; background: var(--panel); border: 1px solid var(--line); }
+.speaker img { width: 70px; height: 70px; border-radius: 50%; object-fit: cover; background: #1e293b; box-shadow: 0 0 0 2px rgba(249,115,22,0.7); }
+.speaker .nm { font-size: 25px; font-weight: 700; color: var(--c-white); line-height: 1.1; }
 .speaker .rl { font-size: 17px; color: var(--c-gray); }
+
+/* Chip "Ao vivo" com destaque sutil */
+.chip.live { border-color: rgba(239, 68, 68, 0.5); }
+
+/* Cenários "E se…" (slide de prevenção multidisciplinar) */
+.scenario {
+  flex: 1; min-width: 0;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--c-orange);
+  border-radius: 14px;
+  padding: 22px 26px;
+}
+.scenario .scenario-h {
+  font-size: 25px; font-weight: 800; color: var(--c-white);
+  margin-bottom: 10px; display: flex; align-items: center; gap: 10px;
+}
+.scenario p { margin: 0; font-size: 22px; line-height: 1.34; color: #D9E1EC; }
+.scenario p b { color: var(--c-orange); }
 
 /* Miniatura do e-book */
 .ebook { width: 168px; border-radius: 8px; border: 1px solid var(--line-strong); box-shadow: 0 18px 50px rgba(0,0,0,0.55); }

@@ -13,7 +13,7 @@ edificações**.
 - **Data:** 13 de julho · **Ao vivo no YouTube**
 - **Base:** e-book _"Proteção contra incêndios em veículos elétricos:
   Estratégias e Práticas Mitigadoras — 3ª edição"_
-- **Formato:** 14 slides · ~40 minutos · 16:9
+- **Formato:** 12 slides · ~40 minutos · 16:9
 
 A apresentação é **HTML real** (texto selecionável, animações CSS, diagramas
 SVG inline e navegação em JavaScript puro), servida por um app **Streamlit** e
@@ -47,7 +47,7 @@ aulive-protecao-incendio-veiculos-eletricos/
 │   └── config.toml         # tema escuro + enableStaticServing
 │
 ├── presentation/
-│   ├── index.html          # 14 slides em HTML + SVG (documento completo)
+│   ├── index.html          # 12 slides em HTML + SVG (documento completo)
 │   ├── styles.css          # design system, palco 16:9, animações
 │   ├── script.js           # navegação, fragmentos, overview, notas, timer…
 │   └── slides.json         # títulos, tempos e NOTAS do apresentador
@@ -133,7 +133,7 @@ cheia.
 | Slide anterior | `←` · `PageUp` · deslizar → |
 | Primeiro / último slide | `Home` · `End` |
 | Tela cheia | `F` (ou botão) |
-| Visão geral (miniaturas dos 14 slides) | `O` |
+| Visão geral (miniaturas dos 12 slides) | `O` |
 | Notas do apresentador | `N` |
 | Mostrar/ocultar cronômetro | `T` |
 | Iniciar / pausar cronômetro | `Shift + T` (ou botão ▶/⏸) |
@@ -141,7 +141,7 @@ cheia.
 | Ajuda (lista de atalhos) | `?` |
 | Fechar painéis | `Esc` |
 
-Outros recursos: barra de progresso inferior com **slide atual / 14** e
+Outros recursos: barra de progresso inferior com **slide atual / 12** e
 **tempo estimado acumulado**; **URL com hash** (`#slide-01`… — abre direto e
 mantém o slide ao atualizar a página); **auto-ocultar** de cursor e controles
 após alguns segundos parados; suporte a **`prefers-reduced-motion`**.
@@ -157,8 +157,8 @@ Basta **substituir os arquivos mantendo o mesmo nome**:
 
 | Arquivo | Onde aparece | Situação atual |
 | --- | --- | --- |
-| `static/speakers/luiz-araujo.png` | capa e conclusão | ✔ foto real (do material do evento) |
-| `static/speakers/felipe-lima.png` | capa e conclusão | ✔ foto real (do material do evento) |
+| `static/speakers/luiz-araujo.png` | capa | ✔ foto real (do material do evento) |
+| `static/speakers/felipe-lima.png` | capa | ✔ foto real (do material do evento) |
 | `static/logos/ebook-cover.png` | referência do e-book | ✔ capa real (2ª ed.) — troque pela 3ª edição |
 | `static/logos/adpat.png` | crédito ADPAT/FEIPAT | ✔ extraído do material |
 | `static/logos/aulive.png` | marca AULIVE | ⚠ **placeholder** — troque pela arte oficial |
@@ -242,7 +242,7 @@ python -m unittest discover tests
 ```
 
 Os testes verificam: importação de `app.py` sem erro; existência dos arquivos
-obrigatórios; **exatamente 14 slides** (no HTML e no JSON); títulos presentes;
+obrigatórios; **exatamente 12 slides** (no HTML e no JSON); títulos presentes;
 arquivos HTML/CSS/JS não vazios; e a soma dos tempos próxima de 40 minutos.
 
 Checklist manual sugerido antes da transmissão:

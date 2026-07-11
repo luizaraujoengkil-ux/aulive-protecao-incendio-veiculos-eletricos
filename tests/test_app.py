@@ -4,7 +4,7 @@ Testes mínimos de qualidade da apresentação AULIVE #57.
 Cobrem:
   • importar app.py sem erro de sintaxe/execução;
   • existência dos arquivos obrigatórios;
-  • exatamente 14 slides (no index.html e no slides.json);
+  • exatamente 12 slides (no index.html e no slides.json);
   • todos os slides possuem título;
   • os arquivos HTML, CSS e JS não estão vazios;
   • a soma dos tempos estimados fica próxima de 40 minutos.
@@ -36,7 +36,7 @@ REQUIRED = [
     PRES / "slides.json",
 ]
 
-EXPECTED_SLIDES = 14
+EXPECTED_SLIDES = 12
 TARGET_MINUTES = 40
 
 
@@ -63,7 +63,7 @@ class TestAppImports(unittest.TestCase):
 
 
 class TestSlideCount(unittest.TestCase):
-    def test_html_has_14_slides(self):
+    def test_html_has_expected_slides(self):
         html = (PRES / "index.html").read_text(encoding="utf-8")
         sections = re.findall(r'<section[^>]*class="slide"', html)
         self.assertEqual(len(sections), EXPECTED_SLIDES,
@@ -75,7 +75,7 @@ class TestSlideCount(unittest.TestCase):
         self.assertEqual(len(ids), EXPECTED_SLIDES)
         self.assertEqual(ids, [f"{i:02d}" for i in range(1, EXPECTED_SLIDES + 1)])
 
-    def test_json_has_14_slides(self):
+    def test_json_has_expected_slides(self):
         data = json.loads((PRES / "slides.json").read_text(encoding="utf-8"))
         self.assertEqual(len(data["slides"]), EXPECTED_SLIDES)
 
