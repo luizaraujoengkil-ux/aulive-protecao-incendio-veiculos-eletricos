@@ -69,8 +69,17 @@
 
         <div class="cols narrow-left" style="gap:64px;">
           <div class="diagram-wrap reveal d2">
-            <!-- Edificação preparada cercada pelos cinco pilares -->
-            <img class="pillar-img" src="app/static/images/objetivo-edificacao.jpg" alt="Edificação preparada, cercada por cinco pilares: riscos do carregamento, medidas mitigatórias, capacidade e demanda, disciplinas da edificação e inspeção/gestão" />
+            <!-- Edificação preparada + overlay que acende cada ícone (camada por pilar) -->
+            <figure class="pillar-figure">
+              <img class="pillar-img" src="app/static/images/objetivo-edificacao.jpg" alt="Edificação preparada, cercada por cinco pilares: riscos do carregamento, medidas mitigatórias, capacidade e demanda, disciplinas da edificação e inspeção/gestão" />
+              <svg class="pillar-overlay" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+                <g class="halo fragment" data-frag="1" style="--c:var(--c-orange)"><circle class="hglow" cx="50"   cy="15"/><circle class="ring heat" cx="50"   cy="15" r="6.6"/><circle class="dot" cx="50"   cy="15" r="1.5"/></g>
+                <g class="halo fragment" data-frag="2" style="--c:var(--c-cyan)"><circle class="hglow" cx="17"   cy="34"/><circle class="ring heat" cx="17"   cy="34" r="6.6"/><circle class="dot" cx="17"   cy="34" r="1.5"/></g>
+                <g class="halo fragment" data-frag="3" style="--c:var(--c-orange)"><circle class="hglow" cx="83"   cy="34"/><circle class="ring heat" cx="83"   cy="34" r="6.6"/><circle class="dot" cx="83"   cy="34" r="1.5"/></g>
+                <g class="halo fragment" data-frag="4" style="--c:var(--c-cyan)"><circle class="hglow" cx="20.5" cy="75"/><circle class="ring heat" cx="20.5" cy="75" r="6.6"/><circle class="dot" cx="20.5" cy="75" r="1.5"/></g>
+                <g class="halo fragment" data-frag="5" style="--c:var(--c-orange)"><circle class="hglow" cx="80.5" cy="74"/><circle class="ring heat" cx="80.5" cy="74" r="6.6"/><circle class="dot" cx="80.5" cy="74" r="1.5"/></g>
+              </svg>
+            </figure>
           </div>
 
           <div class="stack" style="justify-content:center;height:100%;">

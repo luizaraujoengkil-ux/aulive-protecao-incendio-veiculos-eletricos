@@ -311,12 +311,21 @@ html, body {
 /* Diagrama com altura limitada, para não colidir com mensagens no rodapé */
 .diagram-wrap.bounded { max-height: 400px; align-self: center; }
 
-/* Imagem-ilustração de pilares (slide 02) */
+/* Imagem-ilustração de pilares (slide 02) + overlay que acende por pilar */
+.pillar-figure { position: relative; display: inline-block; align-self: center; line-height: 0; }
 .pillar-img {
-  max-width: 100%; max-height: 500px; object-fit: contain;
+  display: block; max-width: 100%; max-height: 500px; object-fit: contain;
   border-radius: 18px;
   filter: drop-shadow(0 20px 50px rgba(0, 0, 0, 0.5));
 }
+/* SVG sobreposto exatamente sobre a imagem (viewBox 0-100 = proporção da imagem) */
+.pillar-overlay { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; }
+.pillar-overlay .hglow { fill: var(--c); opacity: 0.16; r: 10; filter: blur(2px); }
+.pillar-overlay .ring  { fill: none; stroke: var(--c); stroke-width: 1; filter: drop-shadow(0 0 2.5px var(--c)); }
+.pillar-overlay .dot   { fill: var(--c); }
+/* Estado dos marcadores: escondidos até o fragmento ser revelado; sem deslize/blur */
+.pillar-overlay .halo { opacity: 0; transform: none; filter: none; transition: opacity 0.5s var(--ease); }
+.pillar-overlay .halo.revealed { opacity: 1; }
 
 /* Estatística grande (números) */
 .stat { display: flex; flex-direction: column; gap: 4px; }
