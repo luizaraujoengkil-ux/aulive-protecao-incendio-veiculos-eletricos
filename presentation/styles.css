@@ -311,6 +311,13 @@ html, body {
 /* Diagrama com altura limitada, para não colidir com mensagens no rodapé */
 .diagram-wrap.bounded { max-height: 400px; align-self: center; }
 
+/* Imagem-ilustração de pilares (slide 02) */
+.pillar-img {
+  max-width: 100%; max-height: 500px; object-fit: contain;
+  border-radius: 18px;
+  filter: drop-shadow(0 20px 50px rgba(0, 0, 0, 0.5));
+}
+
 /* Estatística grande (números) */
 .stat { display: flex; flex-direction: column; gap: 4px; }
 .stat .big {
