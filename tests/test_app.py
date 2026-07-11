@@ -65,7 +65,8 @@ class TestAppImports(unittest.TestCase):
 class TestSlideCount(unittest.TestCase):
     def test_html_has_expected_slides(self):
         html = (PRES / "index.html").read_text(encoding="utf-8")
-        sections = re.findall(r'<section[^>]*class="slide"', html)
+        # "slide" pode vir com classes extras (ex.: "slide cover-slide")
+        sections = re.findall(r'<section[^>]*class="slide[ "]', html)
         self.assertEqual(len(sections), EXPECTED_SLIDES,
                          f"Esperados {EXPECTED_SLIDES} slides no index.html, achei {len(sections)}")
 
@@ -91,7 +92,7 @@ class TestSlideTitles(unittest.TestCase):
     def test_every_slide_has_heading_in_html(self):
         html = (PRES / "index.html").read_text(encoding="utf-8")
         # Cada <section class="slide"> deve conter um <h1> ou <h2>.
-        blocks = re.split(r'<section[^>]*class="slide"', html)[1:]
+        blocks = re.split(r'<section[^>]*class="slide[ "]', html)[1:]
         self.assertEqual(len(blocks), EXPECTED_SLIDES)
         for i, block in enumerate(blocks, start=1):
             with self.subTest(slide=i):

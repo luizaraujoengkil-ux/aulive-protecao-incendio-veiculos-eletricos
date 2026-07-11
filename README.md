@@ -157,6 +157,8 @@ Basta **substituir os arquivos mantendo o mesmo nome**:
 
 | Arquivo | Onde aparece | Situação atual |
 | --- | --- | --- |
+| `static/images/cover-garage.jpg` | **hero da capa** (tela cheia) | ✔ imagem fotorreal do evento |
+| `static/logos/adpat-selo.png` | **selo de membro** (capa, canto sup. dir.) | ✔ selo ADPAT nº 1336 |
 | `static/speakers/luiz-araujo.png` | capa | ✔ foto real (do material do evento) |
 | `static/speakers/felipe-lima.png` | capa | ✔ foto real (do material do evento) |
 | `static/logos/ebook-cover.png` | referência do e-book | ✔ capa real (2ª ed.) — troque pela 3ª edição |

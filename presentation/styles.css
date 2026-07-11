@@ -379,6 +379,100 @@ html, body {
 .scenario p { margin: 0; font-size: 22px; line-height: 1.34; color: #D9E1EC; }
 .scenario p b { color: var(--c-orange); }
 
+/* ===================================================================== */
+/*  CAPA CINEMATOGRÁFICA (slide 01) — hero fotorreal + movimento          */
+/* ===================================================================== */
+.cover-slide { background: #05070c; }
+
+/* Hero em tela cheia com leve zoom/pan contínuo (Ken Burns) */
+.cover-hero { position: absolute; inset: 0; overflow: hidden; }
+.cover-hero img {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: 62% 55%;
+  transform-origin: 62% 52%;
+}
+.slide.active .cover-hero img { animation: kenburns 30s ease-in-out infinite alternate; }
+@keyframes kenburns {
+  from { transform: scale(1.04); }
+  to   { transform: scale(1.15) translate(-1.5%, -1.2%); }
+}
+
+/* Escurecimento à esquerda para leitura do texto + brilho quente */
+.cover-scrim {
+  position: absolute; inset: 0; pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(5,7,12,0.97) 0%, rgba(5,7,12,0.84) 30%, rgba(5,7,12,0.35) 54%, rgba(5,7,12,0) 74%),
+    linear-gradient(0deg, rgba(5,7,12,0.88) 0%, rgba(5,7,12,0) 32%),
+    radial-gradient(120% 90% at 16% 42%, rgba(249,115,22,0.12), transparent 55%);
+}
+
+/* Varredura de luz (sensação de vídeo) */
+.cover-sheen { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+.cover-sheen::before {
+  content: ""; position: absolute; top: -20%; left: -45%; width: 45%; height: 140%;
+  background: linear-gradient(100deg, transparent, rgba(120,190,255,0.07) 45%, rgba(255,255,255,0.05) 55%, transparent);
+  transform: skewX(-16deg);
+}
+.slide.active .cover-sheen::before { animation: sheen 9s ease-in-out 1.4s infinite; }
+@keyframes sheen { 0% { left: -45%; } 55%, 100% { left: 135%; } }
+
+/* Moldura técnica com marcas de canto */
+.cover-frame i { position: absolute; width: 46px; height: 46px; border: 2px solid rgba(249,115,22,0.5); }
+.cover-frame i:nth-child(1) { top: 52px; left: 54px; border-right: 0; border-bottom: 0; }
+.cover-frame i:nth-child(2) { top: 52px; right: 54px; border-left: 0; border-bottom: 0; }
+.cover-frame i:nth-child(3) { bottom: 52px; left: 54px; border-right: 0; border-top: 0; }
+.cover-frame i:nth-child(4) { bottom: 52px; right: 54px; border-left: 0; border-top: 0; }
+
+/* Conteúdo (coluna esquerda, centralizado verticalmente) */
+.cover-content {
+  position: absolute; left: 128px; top: 0; bottom: 0; width: 1010px;
+  display: flex; flex-direction: column; justify-content: center; z-index: 3;
+}
+.cover-content .kicker { margin-bottom: 6px; }
+
+.cover-title {
+  font-size: 90px; line-height: 0.98; font-weight: 800; letter-spacing: -0.02em;
+  margin: 12px 0 0; color: #fff; text-shadow: 0 8px 44px rgba(0,0,0,0.65);
+}
+.cover-title .grad {
+  background: linear-gradient(90deg, #F97316, #FACC15, #F97316, #22D3EE);
+  background-size: 280% 100%;
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.slide.active .cover-title .grad { animation: gradmove 8s ease-in-out infinite; }
+@keyframes gradmove { 0%, 100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+
+.cover-line {
+  height: 4px; width: 0; margin-top: 22px; border-radius: 2px;
+  background: linear-gradient(90deg, var(--c-orange), var(--c-cyan));
+  box-shadow: 0 0 18px rgba(249,115,22,0.6);
+}
+.slide.active .cover-line { animation: growline 1s var(--ease) 0.5s both; }
+@keyframes growline { to { width: 380px; } }
+
+.cover-phrase { display: flex; gap: 18px; align-items: stretch; margin-top: 28px; }
+.cover-phrase .cp-bar { width: 5px; border-radius: 3px; background: var(--c-orange); box-shadow: 0 0 16px rgba(249,115,22,0.6); }
+.cover-phrase p { margin: 0; font-size: 28px; line-height: 1.3; color: #E8EEF5; }
+.cover-phrase strong { color: #fff; }
+
+.cover-content .speakers { margin-top: 34px; }
+.cover-content .chips { margin-top: 24px; }
+.speaker.glass, .chip.glass { background: rgba(12,18,28,0.55); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+
+/* Selo ADPAT — credencial com anel giratório e leve flutuação */
+.cover-seal { position: absolute; top: 66px; right: 92px; width: 216px; height: 216px; margin: 0; z-index: 4; }
+.cover-seal img { width: 100%; height: 100%; object-fit: contain; position: relative; z-index: 2; filter: drop-shadow(0 12px 34px rgba(0,0,0,0.65)); }
+.slide.active .cover-seal img { animation: sealfloat 6s ease-in-out infinite; }
+@keyframes sealfloat { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-9px); } }
+.cover-seal .seal-ring {
+  position: absolute; inset: -13px; border-radius: 50%; z-index: 1;
+  background: conic-gradient(from 0deg, rgba(249,115,22,0), rgba(249,115,22,0.6), rgba(34,211,238,0.55), rgba(249,115,22,0));
+  -webkit-mask: radial-gradient(circle, transparent 61%, #000 63%);
+          mask: radial-gradient(circle, transparent 61%, #000 63%);
+  filter: blur(1px);
+}
+.slide.active .cover-seal .seal-ring { animation: spin 14s linear infinite; }
+
 /* Miniatura do e-book */
 .ebook { width: 168px; border-radius: 8px; border: 1px solid var(--line-strong); box-shadow: 0 18px 50px rgba(0,0,0,0.55); }
 

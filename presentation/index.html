@@ -17,124 +17,45 @@
   <div class="deck-stage" id="stage">
 
     <!-- ============================================================ SLIDE 01 — CAPA (peça de divulgação) -->
-    <section class="slide" id="slide-01" data-min="1" aria-label="Capa">
-      <div class="slide-inner" style="display:grid;grid-template-columns:1.02fr 0.98fr;gap:48px;align-items:center;">
-        <div class="stack">
-          <span class="kicker reveal d1">AULIVE&nbsp;<span class="n">#57</span></span>
-          <h1 class="reveal d1" style="font-size:82px;">Proteção contra incêndios em <span style="color:var(--c-orange)">veículos elétricos</span></h1>
-          <p class="lead reveal d2" style="margin-top:22px;">Medidas mitigatórias com foco na <strong>proteção das edificações</strong>.</p>
+    <section class="slide cover-slide" id="slide-01" data-min="1" aria-label="Capa">
+      <!-- Hero cinematográfico: foto fotorreal em tela cheia com movimento (Ken Burns) -->
+      <div class="cover-hero" aria-hidden="true"><img src="app/static/images/cover-garage.jpg" alt="" /></div>
+      <div class="cover-scrim" aria-hidden="true"></div>
+      <div class="cover-sheen" aria-hidden="true"></div>
+      <div class="cover-frame" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
 
-          <div class="reveal d3" style="margin-top:26px;padding:18px 24px;border-left:5px solid var(--c-orange);background:rgba(249,115,22,0.08);border-radius:12px;max-width:760px;">
-            <p style="margin:0;font-size:27px;line-height:1.32;color:#E2E8F0;">Não basta instalar o carregador.<br><strong style="color:var(--c-white)">É preciso preparar a edificação.</strong></p>
+      <!-- Selo de Membro Profissional ADPAT -->
+      <figure class="cover-seal reveal d5" aria-label="Selo de Membro Profissional ADPAT — Luiz Araujo de Souza Junior, nº 1336">
+        <span class="seal-ring" aria-hidden="true"></span>
+        <img src="app/static/logos/adpat-selo.png" alt="Selo ADPAT — Membro Profissional nº 1336" />
+      </figure>
+
+      <div class="cover-content">
+        <span class="kicker reveal d1">AULIVE&nbsp;<span class="n">#57</span></span>
+        <h1 class="cover-title reveal d2">Proteção contra incêndios<br>em <span class="grad">veículos elétricos</span></h1>
+        <div class="cover-line reveal d2" aria-hidden="true"></div>
+        <p class="lead reveal d3" style="margin-top:20px;max-width:820px;">Medidas mitigatórias com foco na <strong>proteção das edificações</strong>.</p>
+
+        <div class="cover-phrase reveal d3">
+          <span class="cp-bar" aria-hidden="true"></span>
+          <p>Não basta instalar o carregador.<br><strong>É preciso preparar a edificação.</strong></p>
+        </div>
+
+        <div class="speakers reveal d4">
+          <div class="speaker glass">
+            <img src="app/static/speakers/luiz-araujo.png" alt="Prof. Luiz Araujo" class="ph-fallback" />
+            <div class="nm">Prof. Luiz Araujo</div>
           </div>
-
-          <div class="speakers reveal d4" style="margin-top:30px;">
-            <div class="speaker">
-              <img src="app/static/speakers/luiz-araujo.png" alt="Prof. Luiz Araujo" class="ph-fallback" />
-              <div class="nm">Prof. Luiz Araujo</div>
-            </div>
-            <div class="speaker">
-              <img src="app/static/speakers/felipe-lima.png" alt="Prof. Felipe Lima" class="ph-fallback" />
-              <div class="nm">Prof. Felipe Lima</div>
-            </div>
-          </div>
-
-          <div class="chips reveal d5" style="margin-top:26px;">
-            <span class="chip"><span class="dot"></span>13 de julho</span>
-            <span class="chip live"><span class="dot red heat"></span>Ao vivo no YouTube</span>
-            <span class="chip"><span class="dot cyan"></span>Baseado no e-book — 3ª edição</span>
+          <div class="speaker glass">
+            <img src="app/static/speakers/felipe-lima.png" alt="Prof. Felipe Lima" class="ph-fallback" />
+            <div class="nm">Prof. Felipe Lima</div>
           </div>
         </div>
 
-        <div class="diagram-wrap reveal d3">
-          <!-- Garagem em corte esquemático — visual premium (prevenção e monitoramento) -->
-          <svg class="diagram" viewBox="0 0 900 780" role="img" aria-label="Corte esquemático de garagem com veículo elétrico conectado, sensor, sprinkler e rota de fuga">
-            <defs>
-              <linearGradient id="concrete" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0" stop-color="#202b3c"/><stop offset="1" stop-color="#141d29"/>
-              </linearGradient>
-              <linearGradient id="carbody" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0" stop-color="#2f4056"/><stop offset="1" stop-color="#18222f"/>
-              </linearGradient>
-              <radialGradient id="floorglow" cx="0.5" cy="0.5" r="0.5">
-                <stop offset="0" stop-color="rgba(34,211,238,.35)"/><stop offset="1" stop-color="rgba(34,211,238,0)"/>
-              </radialGradient>
-              <linearGradient id="reflect" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0" stop-color="rgba(148,163,184,.18)"/><stop offset="1" stop-color="rgba(148,163,184,0)"/>
-              </linearGradient>
-            </defs>
-
-            <!-- Laje / teto com armadura -->
-            <rect x="40" y="70" width="820" height="52" fill="url(#concrete)" stroke="var(--line-strong)"/>
-            <line x1="60" y1="84" x2="840" y2="84" stroke="rgba(148,163,184,.35)" stroke-dasharray="3 9"/>
-            <line x1="60" y1="108" x2="840" y2="108" stroke="rgba(148,163,184,.25)" stroke-dasharray="3 9"/>
-
-            <!-- Pilares -->
-            <rect x="60" y="122" width="30" height="520" fill="url(#concrete)" stroke="var(--line)"/>
-            <rect x="810" y="122" width="30" height="520" fill="url(#concrete)" stroke="var(--line)"/>
-
-            <!-- Piso + brilho + reflexo -->
-            <rect x="40" y="642" width="820" height="70" fill="#0f1622" stroke="var(--line)"/>
-            <line x1="40" y1="642" x2="860" y2="642" stroke="var(--line-strong)"/>
-            <ellipse cx="330" cy="648" rx="230" ry="26" fill="url(#floorglow)"/>
-
-            <!-- Sensor térmico no teto -->
-            <g transform="translate(300,122)">
-              <circle cx="0" cy="12" r="12" fill="#0b1220" stroke="var(--c-cyan)" stroke-width="2"/>
-              <circle class="heat" cx="0" cy="12" r="6" fill="var(--c-cyan)"/>
-              <path class="draw" style="--len:120" d="M-26,44 A26,26 0 0 1 26,44" stroke="var(--c-cyan)" stroke-width="2" fill="none" opacity=".7"/>
-              <text class="svg-label sm" x="0" y="80" text-anchor="middle">sensor</text>
-            </g>
-
-            <!-- Sprinkler -->
-            <g transform="translate(560,122)">
-              <rect x="-6" y="12" width="12" height="16" fill="#0b1220" stroke="var(--c-gray)"/>
-              <path d="M0,28 l-10,16 M0,28 l10,16 M0,28 l0,18" stroke="var(--c-cyan)" stroke-width="2"/>
-              <text class="svg-label sm" x="0" y="70" text-anchor="middle">sprinkler</text>
-            </g>
-
-            <!-- Veículo elétrico -->
-            <g transform="translate(150,470)">
-              <path d="M6,150 L6,112 L44,110 L96,58 Q120,44 180,44 L300,46 Q345,50 392,96 L430,110 L436,150 Z" fill="url(#carbody)" stroke="var(--line-strong)"/>
-              <path d="M108,110 L150,66 Q160,60 210,60 L290,62 Q320,64 356,104 L356,110 Z" fill="#0e1723" stroke="var(--line)"/>
-              <line x1="232" y1="62" x2="232" y2="110" stroke="var(--line)"/>
-              <circle cx="92" cy="150" r="40" fill="#0a1019" stroke="var(--line-strong)" stroke-width="2"/>
-              <circle cx="92" cy="150" r="18" fill="#182231" stroke="var(--c-gray)"/>
-              <circle cx="352" cy="150" r="40" fill="#0a1019" stroke="var(--line-strong)" stroke-width="2"/>
-              <circle cx="352" cy="150" r="18" fill="#182231" stroke="var(--c-gray)"/>
-              <rect x="424" y="104" width="16" height="20" rx="3" fill="#0b1220" stroke="var(--c-cyan)"/>
-              <!-- reflexo -->
-              <path d="M6,192 L436,192 L392,236 Q345,250 300,250 L96,250 Q60,236 44,220 Z" fill="url(#reflect)" opacity=".5" transform="translate(0,-40)"/>
-            </g>
-
-            <!-- Estação de recarga + cabo com fluxo elétrico -->
-            <g transform="translate(690,470)">
-              <rect x="0" y="0" width="52" height="176" rx="8" fill="#0e1723" stroke="var(--line-strong)"/>
-              <rect x="10" y="16" width="32" height="40" rx="4" fill="#0b1220" stroke="var(--c-cyan)"/>
-              <circle class="heat" cx="26" cy="82" r="7" fill="var(--c-green)"/>
-              <path class="flow" d="M4,120 C -60,150 -80,120 -104,124" />
-              <text class="svg-label sm" x="26" y="200" text-anchor="middle">carregador</text>
-            </g>
-
-            <!-- Rota de fuga -->
-            <g transform="translate(760,470)">
-              <rect x="0" y="40" width="70" height="172" fill="#0b1220" stroke="var(--c-green)" stroke-width="2"/>
-              <path class="draw" style="--len:60" d="M-70,150 L-14,150" stroke="var(--c-green)" stroke-width="3" fill="none" marker-end="url(#arrow-g)"/>
-              <text class="svg-label sm" x="35" y="232" text-anchor="middle" fill="var(--c-green)">rota de fuga</text>
-            </g>
-
-            <defs>
-              <marker id="arrow-g" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto">
-                <path d="M0,0 L7,3 L0,6 Z" fill="var(--c-green)"/>
-              </marker>
-            </defs>
-
-            <!-- Camadas de proteção (arcos concêntricos) -->
-            <g transform="translate(340,545)" fill="none">
-              <path class="draw" style="--len:900" d="M-250,0 A250,250 0 0 1 250,0" stroke="var(--c-orange)" stroke-width="2.5" opacity=".55"/>
-              <path class="draw" style="--len:760" d="M-210,0 A210,210 0 0 1 210,0" stroke="var(--c-cyan)" stroke-width="2.5" opacity=".5"/>
-            </g>
-          </svg>
+        <div class="chips reveal d5">
+          <span class="chip glass"><span class="dot"></span>13 de julho</span>
+          <span class="chip glass live"><span class="dot red heat"></span>Ao vivo no YouTube</span>
+          <span class="chip glass"><span class="dot cyan"></span>Baseado no e-book — 3ª edição</span>
         </div>
       </div>
     </section>
