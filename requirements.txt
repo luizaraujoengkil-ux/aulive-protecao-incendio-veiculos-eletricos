@@ -1,0 +1,8 @@
+# Dependências da apresentação AULIVE #57
+# A apresentação em si (HTML/CSS/JS) não tem dependências de runtime; apenas o
+# host Streamlit é necessário.
+#
+# st.components.v2.component foi validado no Streamlit 1.58. Se o ambiente
+# tiver uma versão sem a API v2, o app.py degrada automaticamente para o
+# fallback documentado st.components.v1.html.
+streamlit>=1.58,<2

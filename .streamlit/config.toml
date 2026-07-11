@@ -1,0 +1,19 @@
+# Configuração do Streamlit para a apresentação AULIVE #57
+# Documentação: https://docs.streamlit.io/develop/api-reference/configuration/config.toml
+
+[server]
+# Habilita o servimento de arquivos estáticos em ./static (logos, fotos, capa).
+# As imagens são referenciadas no HTML como "app/static/<caminho>".
+enableStaticServing = true
+# headless = true evita tentar abrir o navegador em ambientes sem interface.
+headless = true
+
+[theme]
+base = "dark"
+primaryColor = "#F97316"
+backgroundColor = "#070B12"
+secondaryBackgroundColor = "#111827"
+textColor = "#F8FAFC"
+
+[browser]
+gatherUsageStats = false
