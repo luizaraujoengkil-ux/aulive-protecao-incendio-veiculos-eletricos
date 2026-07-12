@@ -570,21 +570,21 @@
           <h2>Da manutenção <span class="hl">reativa</span> à <span class="hl-cyan">proativa</span></h2>
         </div>
 
-        <div class="cols narrow-left" style="gap:56px;">
-          <div class="diagram-wrap bounded reveal d2">
-            <!-- Evolução da manutenção -->
-            <svg class="diagram" viewBox="0 0 520 420" role="img" aria-label="Evolução da manutenção: corretiva, preventiva, preditiva, proativa">
-              <defs><marker id="arw2" markerWidth="12" markerHeight="12" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="var(--c-cyan)"/></marker></defs>
-              <path class="draw" style="--len:420" d="M60,360 C 160,360 160,90 460,60" fill="none" stroke="var(--c-cyan)" stroke-width="3" marker-end="url(#arw2)"/>
-              <g text-anchor="middle" font-size="19">
-                <g class="spark" style="animation-delay:.1s"><circle cx="70"  cy="352" r="12" fill="#0e1723" stroke="var(--c-red)" stroke-width="2"/><text class="svg-label sm" x="70"  y="388" fill="var(--c-red)">corretiva</text></g>
-                <g class="spark" style="animation-delay:.35s"><circle cx="150" cy="250" r="12" fill="#0e1723" stroke="var(--c-yellow)" stroke-width="2"/><text class="svg-label sm" x="150" y="286" fill="var(--c-yellow)">preventiva</text></g>
-                <g class="spark" style="animation-delay:.6s"><circle cx="285" cy="150" r="12" fill="#0e1723" stroke="var(--c-cyan)" stroke-width="2"/><text class="svg-label sm" x="285" y="186" fill="var(--c-cyan)">preditiva</text></g>
-                <g class="spark" style="animation-delay:.85s"><circle cx="440" cy="70" r="14" fill="rgba(52,211,153,.14)" stroke="var(--c-green)" stroke-width="3"/><text class="svg-title" x="440" y="40" font-size="20" fill="var(--c-green)">proativa</text></g>
-              </g>
-              <text class="svg-label sm" x="260" y="412" text-anchor="middle">revisar planejamento · manual de uso e operação</text>
+        <div class="cols narrow-right" style="gap:56px;">
+          <figure class="curve-figure reveal d2">
+            <img class="curve-img" src="app/static/images/maturidade-manutencao.jpg"
+                 alt="Evolução da manutenção ao longo de uma curva ascendente: corretiva (incêndio), preventiva (inspeção), preditiva (dados e sensores) e proativa (edificação protegida)" />
+            <svg class="curve-overlay" viewBox="0 0 1448 836" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+              <!-- halos acendendo em sequência (a maturidade evoluindo) -->
+              <circle class="cnode n-cor" cx="196"  cy="747"><animate attributeName="r" values="12;26;12" dur="3.2s" begin="0s"   repeatCount="indefinite"/><animate attributeName="opacity" values="0;.9;0" dur="3.2s" begin="0s"   repeatCount="indefinite"/></circle>
+              <circle class="cnode n-pre" cx="500"  cy="724"><animate attributeName="r" values="12;26;12" dur="3.2s" begin=".5s"  repeatCount="indefinite"/><animate attributeName="opacity" values="0;.9;0" dur="3.2s" begin=".5s"  repeatCount="indefinite"/></circle>
+              <circle class="cnode n-prd" cx="850"  cy="661"><animate attributeName="r" values="12;26;12" dur="3.2s" begin="1s"   repeatCount="indefinite"/><animate attributeName="opacity" values="0;.9;0" dur="3.2s" begin="1s"   repeatCount="indefinite"/></circle>
+              <circle class="cnode n-pro" cx="1186" cy="637"><animate attributeName="r" values="14;30;14" dur="3.2s" begin="1.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0"  dur="3.2s" begin="1.5s" repeatCount="indefinite"/></circle>
+              <!-- pulsos de energia subindo a curva (corretiva -> proativa) -->
+              <circle class="cpulse" r="9"><animateMotion path="M22,750 C110,750 150,748 196,747 C300,745 400,738 500,724 C640,706 720,690 850,661 C990,642 1050,640 1186,637 L1425,607" dur="3.4s" begin="0s"    repeatCount="indefinite" rotate="auto"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.08;.9;1" dur="3.4s" begin="0s"    repeatCount="indefinite"/></circle>
+              <circle class="cpulse" r="9"><animateMotion path="M22,750 C110,750 150,748 196,747 C300,745 400,738 500,724 C640,706 720,690 850,661 C990,642 1050,640 1186,637 L1425,607" dur="3.4s" begin="1.7s"  repeatCount="indefinite" rotate="auto"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.08;.9;1" dur="3.4s" begin="1.7s"  repeatCount="indefinite"/></circle>
             </svg>
-          </div>
+          </figure>
 
           <div class="stack reveal d3">
             <ul class="tlist compact">
