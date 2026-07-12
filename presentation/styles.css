@@ -441,13 +441,13 @@ html, body {
 }
 /* Texto técnico (reaparece na fase 2, à direita) */
 .struct-text {
-  position: absolute; right: 2%; top: 50%; width: 46%; z-index: 2;
+  position: absolute; right: 2%; top: 50%; width: 38%; z-index: 2;
   transform: translateY(-50%) translateX(26px); opacity: 0; pointer-events: none;
   transition: opacity 0.55s var(--ease) 0.3s, transform 0.55s var(--ease) 0.3s;
 }
 /* Fase 2 (após clicar): o fogo apaga, a comparação vai para o canto, o texto aparece. */
 .phase-trigger.revealed ~ .fire { opacity: 0; }
-.phase-trigger.revealed ~ .fire-compare { left: 3%; transform: translateX(0) scale(0.9); }
+.phase-trigger.revealed ~ .fire-compare { left: 1%; transform: translateX(0) scale(1.2); }
 .phase-trigger.revealed ~ .struct-text { opacity: 1; transform: translateY(-50%) translateX(0); pointer-events: auto; }
 .slide.active .phase-trigger.revealed ~ .fire-compare .struct-heat,
 .slide.active .phase-trigger.revealed ~ .fire-compare .struct-shield { opacity: 0; animation: none; }
