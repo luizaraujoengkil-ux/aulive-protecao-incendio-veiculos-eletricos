@@ -447,7 +447,7 @@ html, body {
 }
 /* Fase 2 (após clicar): o fogo apaga, a comparação vai para o canto, o texto aparece. */
 .phase-trigger.revealed ~ .fire { opacity: 0; }
-.phase-trigger.revealed ~ .fire-compare { left: 3%; transform: translateX(0) scale(0.6); }
+.phase-trigger.revealed ~ .fire-compare { left: 3%; transform: translateX(0) scale(0.9); }
 .phase-trigger.revealed ~ .struct-text { opacity: 1; transform: translateY(-50%) translateX(0); pointer-events: auto; }
 .slide.active .phase-trigger.revealed ~ .fire-compare .struct-heat,
 .slide.active .phase-trigger.revealed ~ .fire-compare .struct-shield { opacity: 0; animation: none; }
