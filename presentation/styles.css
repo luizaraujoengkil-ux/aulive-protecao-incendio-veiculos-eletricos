@@ -430,8 +430,27 @@ html, body {
 /*  SLIDE 10 — RESPOSTA ESTRUTURAL AO FOGO (comparação + fogo na tela)     */
 /* ===================================================================== */
 .fire-slide .slide-inner { padding-bottom: 88px; }
-.fire-stage { position: relative; flex: 1; min-height: 0; display: flex; align-items: flex-end; justify-content: center; }
-.fire-compare { display: flex; gap: 46px; align-items: flex-end; z-index: 1; }
+.fire-stage { position: relative; flex: 1; min-height: 0; }
+.phase-trigger { position: absolute; width: 0; height: 0; overflow: hidden; }
+/* Fase 1: comparação centrada e grande (com fogo). */
+.fire-compare {
+  position: absolute; left: 50%; bottom: 0; z-index: 1;
+  display: flex; gap: 46px; align-items: flex-end;
+  transform: translateX(-50%) scale(1); transform-origin: bottom left;
+  transition: left 0.8s var(--ease), transform 0.8s var(--ease);
+}
+/* Texto técnico (reaparece na fase 2, à direita) */
+.struct-text {
+  position: absolute; right: 2%; top: 50%; width: 46%; z-index: 2;
+  transform: translateY(-50%) translateX(26px); opacity: 0; pointer-events: none;
+  transition: opacity 0.55s var(--ease) 0.3s, transform 0.55s var(--ease) 0.3s;
+}
+/* Fase 2 (após clicar): o fogo apaga, a comparação vai para o canto, o texto aparece. */
+.phase-trigger.revealed ~ .fire { opacity: 0; }
+.phase-trigger.revealed ~ .fire-compare { left: 3%; transform: translateX(0) scale(0.6); }
+.phase-trigger.revealed ~ .struct-text { opacity: 1; transform: translateY(-50%) translateX(0); pointer-events: auto; }
+.slide.active .phase-trigger.revealed ~ .fire-compare .struct-heat,
+.slide.active .phase-trigger.revealed ~ .fire-compare .struct-shield { opacity: 0; animation: none; }
 .struct { position: relative; margin: 0; }
 .struct img { height: 470px; width: auto; display: block; border-radius: 12px; }
 .struct.bad img  { box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.55), 0 18px 50px rgba(0, 0, 0, 0.6); }
@@ -455,7 +474,7 @@ html, body {
 @keyframes shieldPulse { 0%, 100% { opacity: 0.35; } 50% { opacity: 0.85; } }
 
 /* Fogo saindo da tela */
-.fire { position: absolute; left: 0; right: 0; bottom: 0; height: 340px; z-index: 3; pointer-events: none; }
+.fire { position: absolute; left: 0; right: 0; bottom: 0; height: 340px; z-index: 3; pointer-events: none; transition: opacity 0.7s var(--ease); }
 .fire-glow {
   position: absolute; inset: 0;
   background: radial-gradient(ellipse 42% 90% at 40% 100%, rgba(255, 90, 20, 0.5), rgba(255, 50, 0, 0.14) 46%, transparent 72%);
