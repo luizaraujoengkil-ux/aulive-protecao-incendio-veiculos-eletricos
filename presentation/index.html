@@ -331,19 +331,26 @@
           </div>
         </div>
 
-        <div class="reveal d3" style="margin:22px 0 0;">
-          <svg class="diagram" viewBox="0 0 1660 190" role="img" aria-label="Linha de resposta: detecção, alarme, desligamento, evacuação, resfriamento, isolamento, monitoramento" style="max-height:180px;">
-            <line class="draw" style="--len:1520" x1="70" y1="80" x2="1590" y2="80" stroke="var(--line-strong)" stroke-width="3"/>
-            <g font-size="20" text-anchor="middle">
-              <g class="fragment" data-frag="1"><circle cx="90"   cy="80" r="17" fill="#0e1723" stroke="var(--c-cyan)" stroke-width="3"/><text class="svg-label sm" x="90"   y="128">detecção</text></g>
-              <g class="fragment" data-frag="2"><circle cx="340"  cy="80" r="17" fill="#0e1723" stroke="var(--c-cyan)" stroke-width="3"/><text class="svg-label sm" x="340"  y="128">alarme</text></g>
-              <g class="fragment" data-frag="3"><circle cx="590"  cy="80" r="17" fill="#0e1723" stroke="var(--c-orange)" stroke-width="3"/><text class="svg-label sm" x="590"  y="128">desligamento</text></g>
-              <g class="fragment" data-frag="4"><circle cx="840"  cy="80" r="17" fill="#0e1723" stroke="var(--c-orange)" stroke-width="3"/><text class="svg-label sm" x="840"  y="128">evacuação</text></g>
-              <g class="fragment" data-frag="5"><circle cx="1090" cy="80" r="17" fill="#0e1723" stroke="var(--c-cyan)" stroke-width="3"/><text class="svg-label sm" x="1090" y="128">resfriamento</text></g>
-              <g class="fragment" data-frag="6"><circle cx="1340" cy="80" r="17" fill="#0e1723" stroke="var(--c-cyan)" stroke-width="3"/><text class="svg-label sm" x="1340" y="128">isolamento</text></g>
-              <g class="fragment" data-frag="7"><circle cx="1570" cy="80" r="17" fill="rgba(52,211,153,.12)" stroke="var(--c-green)" stroke-width="3"/><text class="svg-label sm" x="1560" y="128">monitoramento</text></g>
-            </g>
-          </svg>
+        <div class="reveal d3" style="margin:16px 0 0;text-align:center;">
+          <!-- Disciplinas + resposta operacional (imagem) com a trilha animada -->
+          <figure class="pillar-figure trail-figure">
+            <img class="pillar-img trail-img" src="app/static/images/resposta-multidisciplinar.jpg" alt="Planejamento multidisciplinar: disciplinas da edificação (estrutura, impermeabilização, ventilação, elétrica, incêndio) e resposta operacional (detecção → alarme → desligamento → evacuação → resfriamento → isolamento → monitoramento) convergindo para a segurança da edificação" />
+            <svg class="trail-overlay" viewBox="0 0 2172 724" preserveAspectRatio="none" aria-hidden="true">
+              <!-- trilha inferior: 7 nós acendendo em sequência -->
+              <circle class="trail-node" cx="150"  cy="600" r="55" style="--c:var(--c-cyan);--d:0s"/>
+              <circle class="trail-node" cx="410"  cy="600" r="55" style="--c:var(--c-cyan);--d:.16s"/>
+              <circle class="trail-node" cx="645"  cy="600" r="55" style="--c:var(--c-cyan);--d:.32s"/>
+              <circle class="trail-node" cx="965"  cy="600" r="55" style="--c:var(--c-orange);--d:.48s"/>
+              <circle class="trail-node" cx="1210" cy="600" r="55" style="--c:var(--c-orange);--d:.64s"/>
+              <circle class="trail-node" cx="1450" cy="600" r="55" style="--c:var(--c-orange);--d:.8s"/>
+              <circle class="trail-node" cx="1660" cy="600" r="55" style="--c:var(--c-green);--d:.96s"/>
+              <!-- pontos que correm pelas duas trilhas -->
+              <circle class="trail-runner bottom" cx="150" cy="600" r="13"/>
+              <circle class="trail-runner top" cx="175" cy="135" r="13"/>
+              <!-- pulso no escudo (segurança da edificação) -->
+              <circle class="trail-shield" cx="1955" cy="345" r="150"/>
+            </svg>
+          </figure>
         </div>
 
         <div class="cols" style="gap:40px;margin-top:4px;">
