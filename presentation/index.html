@@ -190,8 +190,8 @@
           <h2>Só se adequa a edificação que tem <span class="hl">desempenho adequado</span></h2>
         </div>
 
-        <div class="cols narrow-right" style="gap:56px;">
-          <div class="stack reveal d2">
+        <div class="cols narrow-left" style="gap:48px;">
+          <div class="stack reveal d2" style="justify-content:center;height:100%;">
             <ul class="tlist compact">
               <li>ABNT NBR 17019 · ABNT NBR 5410</li>
               <li>IEC 60364-7-722</li>
@@ -203,28 +203,17 @@
           </div>
 
           <div class="diagram-wrap reveal d3">
-            <!-- Medidor de desempenho + linha de conformidade -->
-            <svg class="diagram" viewBox="0 0 520 420" role="img" aria-label="Medidor de desempenho da edificação e linha de conformidade">
-              <!-- gauge -->
-              <g transform="translate(260,210)">
-                <path d="M-150,0 A150,150 0 0 1 150,0" fill="none" stroke="#1b2432" stroke-width="26" stroke-linecap="round"/>
-                <path class="draw" style="--len:472" d="M-150,0 A150,150 0 0 1 118,-92" fill="none" stroke="var(--c-green)" stroke-width="26" stroke-linecap="round"/>
-                <line class="draw" style="--len:150" x1="0" y1="0" x2="96" y2="-74" stroke="var(--c-white)" stroke-width="4"/>
-                <circle r="10" fill="var(--c-white)"/>
-                <text class="svg-title" x="0" y="52" text-anchor="middle" font-size="26" fill="var(--c-green)">desempenho adequado</text>
-                <text class="svg-label sm" x="-150" y="26">baixo</text>
-                <text class="svg-label sm" x="150" y="26" text-anchor="end">alto</text>
-              </g>
-              <!-- linha de conformidade -->
-              <g transform="translate(0,360)" font-size="16">
-                <line class="draw" style="--len:440" x1="40" y1="0" x2="480" y2="0" stroke="var(--line-strong)" stroke-width="2"/>
-                <g class="spark" style="animation-delay:.1s"><circle cx="50" cy="0" r="10" fill="#0e1723" stroke="var(--c-orange)" stroke-width="2"/><text class="svg-label sm" x="50" y="30" text-anchor="middle">norma</text></g>
-                <g class="spark" style="animation-delay:.3s"><circle cx="157" cy="0" r="10" fill="#0e1723" stroke="var(--c-cyan)" stroke-width="2"/><text class="svg-label sm" x="157" y="30" text-anchor="middle">projeto</text></g>
-                <g class="spark" style="animation-delay:.5s"><circle cx="264" cy="0" r="10" fill="#0e1723" stroke="var(--c-orange)" stroke-width="2"/><text class="svg-label sm" x="264" y="30" text-anchor="middle">resp. técnica</text></g>
-                <g class="spark" style="animation-delay:.7s"><circle cx="371" cy="0" r="10" fill="#0e1723" stroke="var(--c-cyan)" stroke-width="2"/><text class="svg-label sm" x="371" y="30" text-anchor="middle">instalação</text></g>
-                <g class="spark" style="animation-delay:.9s"><circle cx="470" cy="0" r="10" fill="#0e1723" stroke="var(--c-green)" stroke-width="2"/><text class="svg-label sm" x="470" y="30" text-anchor="middle">inspeção</text></g>
-              </g>
-            </svg>
+            <!-- Espectro de desempenho (imagem) + movimento contínuo -->
+            <figure class="pillar-figure perf-figure">
+              <img class="pillar-img" src="app/static/images/desempenho.jpg" alt="Espectro de desempenho da edificação: de uma estrutura em ruína (baixo) a uma edificação moderna e adequada (alto), com medidor em gradiente" />
+              <svg class="perf-overlay" viewBox="0 0 1536 1024" preserveAspectRatio="none" aria-hidden="true">
+                <circle class="perf-tip" cx="1185" cy="262" r="26"/>
+                <circle class="perf-mark m1" cx="210"  cy="876" r="34"/>
+                <circle class="perf-mark m2" cx="768"  cy="876" r="34"/>
+                <circle class="perf-mark m3" cx="1255" cy="876" r="34"/>
+                <circle class="perf-runner" cx="210" cy="876" r="15"/>
+              </svg>
+            </figure>
           </div>
         </div>
 
