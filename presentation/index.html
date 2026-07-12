@@ -274,35 +274,26 @@
         </div>
 
         <div class="cols" style="gap:56px;">
-          <div class="diagram-wrap bounded reveal d2">
-            <!-- Corte de uma edificação com vários pavimentos -->
-            <svg class="diagram" viewBox="0 0 560 520" role="img" aria-label="Corte de edificação: subsolo com recarga, áreas comuns, apartamento com bateria leve, rota de fuga">
-              <rect x="60" y="20" width="440" height="480" rx="6" fill="#0c1420" stroke="var(--line-strong)" stroke-width="2"/>
-              <!-- lajes entre pavimentos -->
-              <g stroke="var(--line)"><line x1="60" y1="130" x2="500" y2="130"/><line x1="60" y1="240" x2="500" y2="240"/><line x1="60" y1="350" x2="500" y2="350"/></g>
-              <!-- caixa de escada / rota de fuga (verde) -->
-              <rect x="60" y="20" width="70" height="480" fill="rgba(52,211,153,.08)"/>
-              <line x1="95" y1="115" x2="95" y2="486" stroke="var(--c-green)" stroke-width="2" stroke-dasharray="8 8"/>
-              <text class="svg-label sm" x="95" y="70" text-anchor="middle" fill="var(--c-green)">rota de fuga</text>
-              <!-- elevador -->
-              <rect x="140" y="115" width="40" height="371" fill="#0e1723" stroke="var(--line)"/>
-              <text class="svg-label sm" x="160" y="105" text-anchor="middle">elevador</text>
-              <!-- Cobertura -->
-              <text class="svg-label sm" x="330" y="60">cobertura · reservatório</text>
-              <!-- Apartamento tipo: bateria leve (laranja) -->
-              <g class="fragment" data-frag="1"><rect x="360" y="150" width="120" height="70" fill="rgba(249,115,22,.12)" stroke="var(--c-orange)"/><text x="420" y="180" text-anchor="middle" font-size="26">🛴</text><circle class="heat" cx="420" cy="205" r="6" fill="var(--c-orange)"/></g>
-              <text class="svg-label sm fragment" data-frag="1" x="420" y="238" text-anchor="middle" fill="var(--c-orange)">bateria leve no apto</text>
-              <!-- Áreas comuns -->
-              <g class="fragment" data-frag="2"><text x="300" y="290" font-size="26">🧯</text><text class="svg-label sm" x="360" y="288" fill="#CBD5E1">áreas comuns</text></g>
-              <!-- Subsolo: garagem + recarga (ciano) -->
-              <g class="fragment" data-frag="3">
-                <rect x="200" y="360" width="280" height="130" fill="rgba(34,211,238,.08)"/>
-                <path d="M300,455 q22,-30 44,0 l30,0 l0,20 l-104,0 l0,-20 z" fill="#18222f" stroke="var(--line-strong)"/>
-                <circle cx="318" cy="475" r="9" fill="#0a1019" stroke="var(--line)"/><circle cx="356" cy="475" r="9" fill="#0a1019" stroke="var(--line)"/>
-                <rect x="392" y="440" width="18" height="46" rx="3" fill="#0e1723" stroke="var(--c-cyan)"/><circle class="heat" cx="401" cy="452" r="5" fill="var(--c-cyan)"/>
-                <text class="svg-label sm" x="300" y="382" fill="var(--c-cyan)">subsolo · recarga do VE</text>
-              </g>
-            </svg>
+          <div class="diagram-wrap reveal d2">
+            <!-- Corte da edificação (imagem) + muitos efeitos contínuos -->
+            <figure class="pillar-figure edif-figure">
+              <img class="pillar-img" src="app/static/images/edificacao-corte.jpg" alt="Corte da edificação inteira: subsolo com recarga do VE, apartamentos, rotas de fuga, ventilação, detecção de incêndio e reservatório — o risco se espalha por todos os níveis" />
+              <svg class="edif-overlay" viewBox="0 0 1254 1254" preserveAspectRatio="none" aria-hidden="true">
+                <!-- varredura vertical (analisando a edificação) -->
+                <rect class="edif-scan" x="175" y="1118" width="910" height="6"/>
+                <!-- pontos de fluxo subindo pelos dutos -->
+                <circle class="edif-flow f1" cx="400" cy="0" r="7"/>
+                <circle class="edif-flow f2" cx="915" cy="0" r="7"/>
+                <!-- marcadores pulsando nos sistemas -->
+                <circle class="edif-mark cyan"   cx="520"  cy="985" r="44" style="--d:0s"/>
+                <circle class="edif-mark green"  cx="305"  cy="358" r="30" style="--d:.3s"/>
+                <circle class="edif-mark green"  cx="300"  cy="668" r="30" style="--d:.6s"/>
+                <circle class="edif-mark cyan"   cx="765"  cy="150" r="34" style="--d:.9s"/>
+                <circle class="edif-mark cyan"   cx="1035" cy="915" r="34" style="--d:1.2s"/>
+                <circle class="edif-mark red"    cx="520"  cy="690" r="28" style="--d:.45s"/>
+                <circle class="edif-mark orange" cx="828"  cy="388" r="30" style="--d:.75s"/>
+              </svg>
+            </figure>
           </div>
 
           <div class="stack">

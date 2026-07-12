@@ -366,6 +366,36 @@ html, body {
   100% { cx: 1255px; fill: #22D3EE; opacity: 0; }
 }
 
+/* Slide 07 — corte da edificação com muitos efeitos contínuos */
+.edif-overlay { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; }
+.edif-overlay circle, .edif-overlay rect { fill: none; }
+/* varredura vertical subindo pela edificação */
+.edif-scan { fill: var(--c-cyan); opacity: 0; filter: blur(3px); }
+.slide.active .edif-scan { animation: edifscan 5s linear infinite; }
+@keyframes edifscan {
+  0%   { transform: translateY(0);      opacity: 0; }
+  8%   { opacity: 0.55; }
+  88%  { opacity: 0.55; }
+  100% { transform: translateY(-930px); opacity: 0; }
+}
+/* pontos de fluxo subindo pelos dutos */
+.edif-flow { fill: var(--c-cyan); stroke: none; filter: drop-shadow(0 0 6px var(--c-cyan)); opacity: 0; }
+.slide.active .edif-flow { animation: edifflow 3s linear infinite; }
+.slide.active .edif-flow.f2 { animation-delay: 1.2s; fill: #34D399; filter: drop-shadow(0 0 6px #34D399); }
+@keyframes edifflow {
+  0%   { transform: translateY(1150px); opacity: 0; }
+  10%  { opacity: 1; }
+  90%  { opacity: 1; }
+  100% { transform: translateY(150px);  opacity: 0; }
+}
+/* marcadores pulsando nos sistemas (escalonados) */
+.edif-mark { stroke-width: 6; transform-box: fill-box; transform-origin: center; }
+.edif-mark.cyan   { stroke: var(--c-cyan); }
+.edif-mark.green  { stroke: var(--c-green); }
+.edif-mark.red    { stroke: var(--c-red); }
+.edif-mark.orange { stroke: var(--c-orange); }
+.slide.active .edif-mark { animation: perfpulse 2.1s ease-in-out infinite; animation-delay: var(--d, 0s); }
+
 /* Estatística grande (números) */
 .stat { display: flex; flex-direction: column; gap: 4px; }
 .stat .big {
