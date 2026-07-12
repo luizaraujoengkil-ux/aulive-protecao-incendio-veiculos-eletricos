@@ -532,20 +532,30 @@
             <div class="callout danger reveal d3" style="margin-top:18px;"><span class="ic">📄</span><span>Se a apólice <b>não cobre</b> incêndio de veículo elétrico, o prejuízo pode ser enorme. Verifique a cobertura conforme contrato.</span></div>
           </div>
 
-          <div class="diagram-wrap bounded reveal d3">
-            <svg class="diagram" viewBox="0 0 480 440" role="img" aria-label="Escudo protegendo pessoas, edificação, veículos, documentação e patrimônio">
-              <path class="draw" style="--len:1000" d="M240,30 L400,90 V220 Q400,330 240,410 Q80,330 80,220 V90 Z" fill="rgba(249,115,22,.08)" stroke="var(--c-orange)" stroke-width="3"/>
-              <text x="240" y="200" text-anchor="middle" font-size="70">🛡️</text>
-              <text class="svg-title" x="240" y="270" text-anchor="middle" font-size="22" fill="var(--c-orange)">proteção</text>
-              <g font-size="18" text-anchor="middle">
-                <g class="spark" style="animation-delay:.2s"><text x="60"  y="80"  fill="#CBD5E1">👥 pessoas</text></g>
-                <g class="spark" style="animation-delay:.4s"><text x="420" y="80"  fill="#CBD5E1">🏢 edificação</text></g>
-                <g class="spark" style="animation-delay:.6s"><text x="40"  y="360" fill="#CBD5E1">🚗 veículos</text></g>
-                <g class="spark" style="animation-delay:.8s"><text x="440" y="360" fill="#CBD5E1">📄 apólice</text></g>
-                <g class="spark" style="animation-delay:1s"><text x="240" y="435" fill="#CBD5E1">💠 patrimônio</text></g>
+          <figure class="net-figure reveal d3">
+            <img class="net-img" src="app/static/images/rede-protecao.jpg"
+                 alt="Escudo central de proteção contra incêndio conectado a pessoas, edificação, veículo elétrico, apólice, checklist e patrimônio" />
+            <svg class="net-overlay" viewBox="0 0 1448 1086" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+              <!-- brilho pulsante do hub central -->
+              <circle class="net-glow" cx="724" cy="543" r="150" fill="var(--c-cyan)">
+                <animate attributeName="r" values="140;225;140" dur="3.2s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" values="0.10;0.30;0.10" dur="3.2s" repeatCount="indefinite"/>
+              </circle>
+              <circle class="net-ring" cx="724" cy="543" r="188" fill="none">
+                <animate attributeName="r" values="180;206;180" dur="3.2s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" values="0.65;0.15;0.65" dur="3.2s" repeatCount="indefinite"/>
+              </circle>
+              <!-- pulsos de energia irradiando do hub para cada nó -->
+              <g class="net-pulses">
+                <circle class="net-pulse" r="8"><animateMotion path="M605,397 L527,301"  dur="1.9s" begin="0s"   repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.7;1" dur="1.9s" begin="0s"   repeatCount="indefinite"/></circle>
+                <circle class="net-pulse" r="8"><animateMotion path="M843,397 L921,301"  dur="1.9s" begin=".3s"  repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.7;1" dur="1.9s" begin=".3s"  repeatCount="indefinite"/></circle>
+                <circle class="net-pulse" r="8"><animateMotion path="M536,543 L365,543"  dur="1.9s" begin=".6s"  repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.7;1" dur="1.9s" begin=".6s"  repeatCount="indefinite"/></circle>
+                <circle class="net-pulse" r="8"><animateMotion path="M912,543 L1083,543" dur="1.9s" begin=".15s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.7;1" dur="1.9s" begin=".15s" repeatCount="indefinite"/></circle>
+                <circle class="net-pulse" r="8"><animateMotion path="M606,690 L536,777"  dur="1.9s" begin=".75s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.7;1" dur="1.9s" begin=".75s" repeatCount="indefinite"/></circle>
+                <circle class="net-pulse" r="8"><animateMotion path="M842,690 L912,777"  dur="1.9s" begin=".45s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.7;1" dur="1.9s" begin=".45s" repeatCount="indefinite"/></circle>
               </g>
             </svg>
-          </div>
+          </figure>
         </div>
 
         <div class="msg reveal d4" style="margin-top:14px;"><span class="ic">⚖️</span><span>Segurança contra incêndio também é <b>gestão de responsabilidade</b> — e as condições devem ser verificadas na apólice e com a seguradora.</span></div>
