@@ -404,58 +404,93 @@
     </section>
 
     <!-- ============================================================ SLIDE 10 — ESTRUTURA E NBR 15200 -->
-    <section class="slide" id="slide-10" data-min="4" aria-label="Estrutura e a ABNT NBR 15200">
+    <section class="slide fire-slide" id="slide-10" data-min="4" aria-label="Estrutura e a ABNT NBR 15200">
       <div class="slide-inner">
         <div class="slide-head reveal d1">
-          <span class="kicker">Estrutura</span>
+          <span class="kicker">Estrutura · Resposta ao fogo</span>
           <h2>Seu edifício atende à <span class="hl">ABNT NBR 15200</span>?</h2>
         </div>
 
-        <div class="cols" style="gap:56px;">
-          <div class="diagram-wrap bounded reveal d2">
-            <svg class="diagram" viewBox="0 0 560 440" role="img" aria-label="Corte de laje e viga de concreto com gradiente de calor e selo NBR 15200">
-              <defs>
-                <linearGradient id="heatgrad" x1="0" y1="1" x2="0" y2="0">
-                  <stop offset="0" stop-color="#EF4444"/><stop offset="0.35" stop-color="#F97316"/>
-                  <stop offset="0.7" stop-color="#FACC15"/><stop offset="1" stop-color="#1b2432"/>
-                </linearGradient>
-              </defs>
-              <rect x="40" y="60" width="480" height="70" fill="#1b2432" stroke="var(--line-strong)"/>
-              <rect x="220" y="130" width="120" height="230" fill="#1b2432" stroke="var(--line-strong)"/>
-              <rect class="heat-rise" x="222" y="250" width="116" height="108" fill="url(#heatgrad)" opacity=".85"/>
-              <rect class="heat-rise" x="42" y="100" width="476" height="28" fill="url(#heatgrad)" opacity=".7"/>
-              <g stroke="var(--c-gray)" stroke-width="3">
-                <line x1="235" y1="345" x2="325" y2="345"/><circle cx="240" cy="345" r="5" fill="var(--c-gray)"/><circle cx="320" cy="345" r="5" fill="var(--c-gray)"/>
-              </g>
-              <text class="svg-label sm" x="280" y="392" text-anchor="middle">cobrimento das armaduras</text>
-              <!-- selo NBR 15200 -->
-              <g transform="translate(430,90)">
-                <circle r="52" fill="rgba(249,115,22,.1)" stroke="var(--c-orange)" stroke-width="2" class="heat"/>
-                <text class="svg-title" x="0" y="-6" text-anchor="middle" font-size="16" fill="var(--c-orange)">NBR</text>
-                <text class="svg-title" x="0" y="18" text-anchor="middle" font-size="22" fill="var(--c-orange)">15200</text>
-              </g>
-              <text class="svg-label sm" x="120" y="176" fill="var(--c-red)">calor</text>
-              <path d="M150,180 H210" stroke="var(--c-red)" stroke-width="2" fill="none" marker-end="url(#arrow-r)"/>
-              <defs><marker id="arrow-r" markerWidth="12" markerHeight="12" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="var(--c-red)"/></marker></defs>
-            </svg>
+        <div class="fire-stage reveal d2">
+          <div class="fire-compare">
+            <figure class="struct bad">
+              <img src="app/static/images/estrutura-nao-verificada.jpg" alt="Estrutura sem verificação adequada: concreto fissurado e incandescente, penetração de calor alta, perda de cobrimento e de estabilidade" />
+              <span class="struct-heat"></span>
+            </figure>
+            <figure class="struct good">
+              <img src="app/static/images/estrutura-verificada.jpg" alt="Estrutura verificada pela ABNT NBR 15200: calor contido no cobrimento, penetração baixa, TRRF correto e melhor desempenho estrutural" />
+              <span class="struct-shield"></span>
+            </figure>
           </div>
 
-          <div class="stack">
-            <ul class="tlist dense reveal d2">
-              <li>Impacto imediato no <b>TRRF</b></li>
-              <li>Cobrimento das armaduras</li>
-              <li>Proteção passiva</li>
-              <li>Compartimentação</li>
-              <li>Deformações e fissuração</li>
-              <li>Destacamento do concreto</li>
-              <li>Resistência ao fogo (lajes, vigas, pilares)</li>
-              <li>Inspeção estrutural após o sinistro</li>
-            </ul>
-            <div class="callout danger reveal d3" style="margin-top:20px;"><span class="ic">⛔</span><span>Sem atender à norma, a instalação pode ser <b>impedida em pontos específicos</b> sem um projeto de adequação. Aparência externa preservada não garante segurança.</span></div>
+          <div class="fire" aria-hidden="true">
+            <div class="fire-glow"></div>
+            <div class="flames">
+              <i class="fl core" style="--x:62.7%;--s:0.8;--w:58px;--d:0.11s;--dur:1.06s"></i>
+              <i class="fl" style="--x:41.0%;--s:1.33;--w:36px;--d:0.07s;--dur:1.01s"></i>
+              <i class="fl" style="--x:50.0%;--s:0.5;--w:40px;--d:0.66s;--dur:1.04s"></i>
+              <i class="fl" style="--x:41.3%;--s:1.42;--w:40px;--d:0.35s;--dur:1.01s"></i>
+              <i class="fl" style="--x:37.0%;--s:1.46;--w:49px;--d:0.28s;--dur:0.91s"></i>
+              <i class="fl" style="--x:48.9%;--s:0.76;--w:54px;--d:1.19s;--dur:1.1s"></i>
+              <i class="fl" style="--x:29.0%;--s:1.6;--w:44px;--d:0.21s;--dur:0.62s"></i>
+              <i class="fl core" style="--x:34.5%;--s:1.62;--w:64px;--d:0.13s;--dur:1.16s"></i>
+              <i class="fl" style="--x:40.9%;--s:1.55;--w:35px;--d:0.91s;--dur:0.76s"></i>
+              <i class="fl" style="--x:50.6%;--s:1.02;--w:58px;--d:0.37s;--dur:1.17s"></i>
+              <i class="fl core" style="--x:29.1%;--s:1.3;--w:39px;--d:0.12s;--dur:0.9s"></i>
+              <i class="fl" style="--x:40.8%;--s:1.36;--w:50px;--d:1.28s;--dur:1.19s"></i>
+              <i class="fl" style="--x:61.9%;--s:0.53;--w:44px;--d:0.85s;--dur:0.82s"></i>
+              <i class="fl" style="--x:63.2%;--s:1.05;--w:64px;--d:1.28s;--dur:1.1s"></i>
+              <i class="fl core" style="--x:53.2%;--s:0.97;--w:35px;--d:0.77s;--dur:0.65s"></i>
+              <i class="fl core" style="--x:61.6%;--s:0.48;--w:35px;--d:1.11s;--dur:1.22s"></i>
+              <i class="fl" style="--x:33.9%;--s:1.52;--w:38px;--d:0.13s;--dur:1.12s"></i>
+              <i class="fl" style="--x:56.0%;--s:0.75;--w:40px;--d:0.61s;--dur:0.87s"></i>
+              <i class="fl core" style="--x:45.5%;--s:1.31;--w:37px;--d:1.08s;--dur:1.1s"></i>
+              <i class="fl" style="--x:64.6%;--s:0.69;--w:61px;--d:1.1s;--dur:0.78s"></i>
+              <i class="fl" style="--x:34.6%;--s:1.24;--w:38px;--d:0.11s;--dur:0.73s"></i>
+              <i class="fl core" style="--x:25.7%;--s:1.38;--w:40px;--d:0.19s;--dur:0.95s"></i>
+              <i class="fl" style="--x:45.0%;--s:1.7;--w:49px;--d:0.19s;--dur:1.01s"></i>
+              <i class="fl core" style="--x:42.5%;--s:1.21;--w:54px;--d:0.15s;--dur:0.96s"></i>
+              <i class="fl core" style="--x:41.7%;--s:1.3;--w:49px;--d:0.25s;--dur:1.21s"></i>
+              <i class="fl core" style="--x:34.9%;--s:1.31;--w:60px;--d:0.75s;--dur:0.64s"></i>
+              <i class="fl" style="--x:42.8%;--s:1.12;--w:65px;--d:0.22s;--dur:1.13s"></i>
+              <i class="fl core" style="--x:62.2%;--s:0.64;--w:39px;--d:0.36s;--dur:0.67s"></i>
+              <i class="fl" style="--x:67.0%;--s:0.87;--w:47px;--d:1.18s;--dur:0.98s"></i>
+              <i class="fl" style="--x:29.5%;--s:1.4;--w:58px;--d:1.26s;--dur:0.97s"></i>
+              <i class="fl core" style="--x:56.8%;--s:0.82;--w:34px;--d:0.06s;--dur:1.09s"></i>
+              <i class="fl" style="--x:55.5%;--s:0.77;--w:50px;--d:0.49s;--dur:1.09s"></i>
+            </div>
+            <div class="embers">
+              <span style="left:72.9%;--d:1.7s;--dur:2.8s;--dx:-17px;--rise:-466px;--sz:6px"></span>
+              <span style="left:60.7%;--d:1.77s;--dur:3.13s;--dx:0px;--rise:-432px;--sz:5px"></span>
+              <span style="left:52.9%;--d:0.67s;--dur:2.63s;--dx:33px;--rise:-497px;--sz:6px"></span>
+              <span style="left:88.5%;--d:1.46s;--dur:3.27s;--dx:-21px;--rise:-421px;--sz:5px"></span>
+              <span style="left:70.9%;--d:0.89s;--dur:3.39s;--dx:-7px;--rise:-406px;--sz:6px"></span>
+              <span style="left:27.7%;--d:2.94s;--dur:3.19s;--dx:-28px;--rise:-421px;--sz:6px"></span>
+              <span style="left:5.1%;--d:1.49s;--dur:3.39s;--dx:48px;--rise:-444px;--sz:4px"></span>
+              <span style="left:26.5%;--d:0.25s;--dur:2.89s;--dx:-1px;--rise:-397px;--sz:4px"></span>
+              <span style="left:64.9%;--d:2.53s;--dur:2.95s;--dx:-47px;--rise:-441px;--sz:4px"></span>
+              <span style="left:29.2%;--d:1.34s;--dur:4.56s;--dx:-44px;--rise:-462px;--sz:4px"></span>
+              <span style="left:5.6%;--d:2.06s;--dur:3.13s;--dx:-9px;--rise:-474px;--sz:6px"></span>
+              <span style="left:82.9%;--d:2.26s;--dur:4.43s;--dx:0px;--rise:-489px;--sz:3px"></span>
+              <span style="left:93.4%;--d:0.64s;--dur:4.46s;--dx:38px;--rise:-460px;--sz:4px"></span>
+              <span style="left:29.2%;--d:1.22s;--dur:4.5s;--dx:41px;--rise:-406px;--sz:5px"></span>
+              <span style="left:44.3%;--d:1.85s;--dur:3.05s;--dx:2px;--rise:-478px;--sz:5px"></span>
+              <span style="left:33.3%;--d:1.98s;--dur:4.58s;--dx:-44px;--rise:-417px;--sz:4px"></span>
+              <span style="left:75.2%;--d:0.38s;--dur:3.14s;--dx:-6px;--rise:-423px;--sz:5px"></span>
+              <span style="left:92.4%;--d:3.17s;--dur:3.02s;--dx:-6px;--rise:-360px;--sz:3px"></span>
+              <span style="left:96.5%;--d:2.83s;--dur:3.6s;--dx:28px;--rise:-467px;--sz:3px"></span>
+              <span style="left:59.8%;--d:2.95s;--dur:3.18s;--dx:19px;--rise:-407px;--sz:6px"></span>
+              <span style="left:68.1%;--d:1.42s;--dur:3.43s;--dx:-41px;--rise:-365px;--sz:4px"></span>
+              <span style="left:61.2%;--d:0.59s;--dur:3.3s;--dx:-4px;--rise:-362px;--sz:4px"></span>
+              <span style="left:70.6%;--d:2.9s;--dur:4.03s;--dx:27px;--rise:-437px;--sz:4px"></span>
+              <span style="left:16.9%;--d:0.27s;--dur:3.7s;--dx:41px;--rise:-479px;--sz:6px"></span>
+              <span style="left:54.5%;--d:0.36s;--dur:4.6s;--dx:-1px;--rise:-421px;--sz:5px"></span>
+              <span style="left:20.7%;--d:3.22s;--dur:3.33s;--dx:-35px;--rise:-409px;--sz:4px"></span>
+            </div>
           </div>
         </div>
 
-        <div class="msg reveal d4" style="margin-top:16px;"><span class="ic">🧱</span><span>Apagar o incêndio não significa que a estrutura está <b>segura para voltar ao uso.</b></span></div>
+        <div class="msg reveal d3" style="margin-top:12px;"><span class="ic">🧱</span><span>O fogo revela a diferença: apagar o incêndio <b>não significa</b> que a estrutura está segura para voltar ao uso.</span></div>
       </div>
     </section>
 
