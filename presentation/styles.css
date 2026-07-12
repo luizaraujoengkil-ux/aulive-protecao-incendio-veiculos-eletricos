@@ -327,6 +327,19 @@ html, body {
 .pillar-overlay .halo { opacity: 0; transform: none; filter: none; transition: opacity 0.5s var(--ease); }
 .pillar-overlay .halo.revealed { opacity: 1; }
 
+/* Slide 04 — anéis de camada que acendem em ordem, reforçando os anéis da imagem */
+.risk-overlay .layer-ring {
+  fill: none; stroke: var(--c); stroke-width: 2.2;
+  opacity: 0; transform: none; filter: none;
+  transition: opacity 0.55s var(--ease);
+}
+.risk-overlay .layer-ring.revealed {
+  opacity: 0.82;
+  filter: blur(1.1px) drop-shadow(0 0 2px var(--c));
+  animation: ringpulse 2.6s ease-in-out infinite;
+}
+@keyframes ringpulse { 0%, 100% { stroke-opacity: 0.5; } 50% { stroke-opacity: 1; } }
+
 /* Estatística grande (números) */
 .stat { display: flex; flex-direction: column; gap: 4px; }
 .stat .big {

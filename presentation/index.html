@@ -157,20 +157,15 @@
 
         <div class="cols" style="gap:56px;">
           <div class="diagram-wrap reveal d2">
-            <svg class="diagram" viewBox="0 0 560 520" role="img" aria-label="Camadas do risco: quantidade e localização, instalação, edificação e sistemas, sinergia">
-              <g transform="translate(280,260)">
-                <circle r="248" fill="rgba(148,163,184,.04)" stroke="rgba(148,163,184,.4)"/>
-                <circle r="188" fill="rgba(34,211,238,.05)" stroke="rgba(34,211,238,.45)"/>
-                <circle r="128" fill="rgba(249,115,22,.06)" stroke="rgba(249,115,22,.5)"/>
-                <circle r="70"  fill="rgba(249,115,22,.14)" stroke="var(--c-orange)" stroke-width="2"/>
-                <circle class="heat" r="24" fill="var(--c-orange)"/>
-                <text class="svg-label sm" x="0" y="-6" text-anchor="middle" fill="#0b1220" font-weight="700">quantidade</text>
-                <text class="svg-label sm" x="0" y="12" text-anchor="middle" fill="#0b1220" font-weight="700">e localização</text>
-                <text class="svg-label sm" x="0" y="-100" text-anchor="middle" fill="var(--c-orange)">instalação</text>
-                <text class="svg-label sm" x="0" y="-158" text-anchor="middle" fill="var(--c-cyan)">edificação · sistemas</text>
-                <text class="svg-label sm" x="0" y="-218" text-anchor="middle" fill="var(--c-gray)">sinergia p/ mitigar</text>
-              </g>
-            </svg>
+            <!-- Camadas do risco (imagem) + overlay que acende cada anel em ordem -->
+            <figure class="pillar-figure risk-figure">
+              <img class="pillar-img" src="app/static/images/risco-camadas.jpg" alt="Veículo elétrico com alerta térmico no centro, cercado por três camadas de risco: quantidade e localização, instalação e a edificação com seus sistemas" />
+              <svg class="pillar-overlay risk-overlay" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+                <ellipse class="layer-ring fragment" data-frag="1" cx="50" cy="52" rx="31" ry="20" style="--c:var(--c-cyan)"/>
+                <ellipse class="layer-ring fragment" data-frag="2" cx="50" cy="51" rx="40.5" ry="29" style="--c:var(--c-orange)"/>
+                <ellipse class="layer-ring fragment" data-frag="3" cx="50" cy="49.5" rx="49" ry="40" style="--c:var(--c-cyan)"/>
+              </svg>
+            </figure>
           </div>
 
           <div class="stack">
